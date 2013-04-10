@@ -1,5 +1,5 @@
 /*
- * Originates from Samsung's u-boot 1.1.6 port to S3C6400 / SMDK6400
+ * Originates from Samsung's u-boot 1.1.6 port to S3C6410 / SMDK6410
  *
  * Copyright (C) 2008
  * Guennadi Liakhovetki, DENX Software Engineering, <lg@denx.de>
@@ -24,7 +24,7 @@
  */
 
 #include <config.h>
-#include <asm/arch/s3c6400.h>
+#include <asm/arch/s3c6410.h>
 
 	.globl mem_ctrl_asm_init
 mem_ctrl_asm_init:
