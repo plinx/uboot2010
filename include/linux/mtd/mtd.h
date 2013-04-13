@@ -62,8 +62,8 @@ struct erase_info {
 };
 
 struct mtd_erase_region_info {
-	/
-//uint64_t offset;			/* At which this region starts, from the beginning of the MTD */
+	
+//	uint64_t offset;	/* At which this region starts, from the beginning of the MTD */
 	u_int32_t offset;
 	u_int32_t erasesize;		/* For this region */
 	u_int32_t numblocks;		/* Number of blocks of erasesize in this region */

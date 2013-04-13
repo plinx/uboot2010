@@ -253,9 +253,9 @@
 #define CONFIG_ENV_OFFSET		0x0080000
 
 /* NAND configuration */
-#define NAND_DISABLE_CE()(NFCONT_REG |=(1<<1))
-#define NAND_ENABLE_CE()(NFCONT_REG &=~(1<<1))
-#define NF_TRANSRnB() do{while(!(NFSTAT_REG&(1<<0)));}while(0)
+#define NAND_DISABLE_CE()	(NFCONT_REG |=(1<<1))
+#define NAND_ENABLE_CE()	(NFCONT_REG &=~(1<<1))
+#define NF_TRANSRnB() 		do{while(!(NFSTAT_REG&(1<<0)));}while(0)
 
 #define CONFIG_SYS_MAX_NAND_DEVICE	1
 #define CONFIG_SYS_NAND_BASE		0x70200010

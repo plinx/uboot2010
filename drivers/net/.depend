@@ -1,4 +1,4 @@
-cs8900.o: cs8900.c /home/linx/Git/uboot2010/include/common.h \
+dm9000x.o: dm9000x.c /home/linx/Git/uboot2010/include/common.h \
   /home/linx/Git/uboot2010/include/config.h \
   /home/linx/Git/uboot2010/include/config_defaults.h \
   /home/linx/Git/uboot2010/include/configs/smdk6410.h \
@@ -39,4 +39,4 @@ cs8900.o: cs8900.c /home/linx/Git/uboot2010/include/common.h \
   /home/linx/Git/uboot2010/include/u-boot/crc.h \
   /home/linx/Git/uboot2010/include/asm/io.h \
   /home/linx/Git/uboot2010/include/asm/memory.h \
-  /home/linx/Git/uboot2010/include/malloc.h cs8900.h
+  /home/linx/Git/uboot2010/include/dm9000.h dm9000x.h

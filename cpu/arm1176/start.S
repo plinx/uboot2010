@@ -292,26 +292,26 @@ copy_from_nand:
 	mov r9, #0x1000
 	bl  copy_uboot_to_ram
 
-3:  tst     r0, #0x0
+3:  	tst r0, #0x0
 	bne copy_failed
 
 	ldr r0, =0x0c000000
 	ldr r1, _TEXT_PHY_BASE
-1:  ldr r3, [r0], #4
+1:  	ldr r3, [r0], #4
 	ldr r4, [r1], #4
 	teq r3, r4
 	bne compare_failed  /* not matched */
 	subs    r9, r9, #4
 	bne 1b
 
-4:  mov lr, r10     /* all is OK */
+4:  	mov lr, r10     /* all is OK */
 	mov pc, lr
 
-	copy_failed:
+copy_failed:
 	nop         /* copy from nand failed */
 	b   copy_failed
 
-	compare_failed:
+compare_failed:
 	nop         /* compare failed */
 	b   compare_failed
 
