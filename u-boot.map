@@ -1393,7 +1393,7 @@ Linker script and memory map
  .v4_bx         0x57e269b0        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_dvmd_lnx.o)
                 0x57e269b0                . = ALIGN (0x4)
 
-.rodata         0x57e269b0     0x89bb
+.rodata         0x57e269b0     0x89b5
  *(SORT(.rodata*))
  .rodata        0x57e269b0       0x60 drivers/mtd/nand/libnand.a(nand_base.o)
  .rodata        0x57e26a10       0x80 lib_arm/libarm.a(interrupts.o)
@@ -1408,428 +1408,428 @@ Linker script and memory map
  .rodata        0x57e279a4       0x10 disk/libdisk.a(part.o)
  .rodata        0x57e279b4       0x80 drivers/usb/host/libusb_host.a(ohci-hcd.o)
  .rodata        0x57e27a34      0x200 lib_generic/libgeneric.a(crc16.o)
- .rodata        0x57e27c34       0x3b lib_arm/board.o
+ .rodata        0x57e27c34       0x35 lib_arm/board.o
                 0x57e27c34                version_string
- .rodata        0x57e27c6f       0x21 lib_generic/libgeneric.a(vsprintf.o)
-                0x57e27c6f                hex_asc
- .rodata        0x57e27c90        0x7 net/libnet.a(eth.o)
- .rodata        0x57e27c97        0x7 net/libnet.a(net.o)
- .rodata        0x57e27c9e        0x5 drivers/mtd/nand/libnand.a(nand.o)
- .rodata        0x57e27ca3      0x100 drivers/mtd/nand/libnand.a(nand_ecc.o)
+ .rodata        0x57e27c69       0x21 lib_generic/libgeneric.a(vsprintf.o)
+                0x57e27c69                hex_asc
+ .rodata        0x57e27c8a        0x7 net/libnet.a(eth.o)
+ .rodata        0x57e27c91        0x7 net/libnet.a(net.o)
+ .rodata        0x57e27c98        0x5 drivers/mtd/nand/libnand.a(nand.o)
+ .rodata        0x57e27c9d      0x100 drivers/mtd/nand/libnand.a(nand_ecc.o)
  .rodata.str1.1
-                0x57e27da3       0x73 lib_arm/board.o
+                0x57e27d9d       0x73 lib_arm/board.o
                                  0x75 (size before relaxing)
  .rodata.str1.1
-                0x57e27e16       0x2a lib_generic/libgeneric.a(display_options.o)
+                0x57e27e10       0x2a lib_generic/libgeneric.a(display_options.o)
                                  0x36 (size before relaxing)
  .rodata.str1.1
-                0x57e27e40        0xe lib_generic/libgeneric.a(vsprintf.o)
+                0x57e27e3a        0xe lib_generic/libgeneric.a(vsprintf.o)
  .rodata.str1.1
-                0x57e27e4e       0x6d cpu/arm1176/s3c64xx/libs3c64xx.a(speed.o)
+                0x57e27e48       0x6d cpu/arm1176/s3c64xx/libs3c64xx.a(speed.o)
  .rodata.str1.1
-                0x57e27ebb      0x264 lib_arm/libarm.a(interrupts.o)
+                0x57e27eb5      0x264 lib_arm/libarm.a(interrupts.o)
                                 0x27b (size before relaxing)
  .rodata.str1.1
-                0x57e2811f        0xf lib_arm/libarm.a(reset.o)
+                0x57e28119        0xf lib_arm/libarm.a(reset.o)
  .rodata.str1.1
-                0x57e2812e       0xad net/libnet.a(eth.o)
+                0x57e28128       0xad net/libnet.a(eth.o)
                                  0xc7 (size before relaxing)
  .rodata.str1.1
-                0x57e281db      0x20c net/libnet.a(net.o)
+                0x57e281d5      0x20c net/libnet.a(net.o)
                                 0x217 (size before relaxing)
  .rodata.str1.1
-                0x57e283e7      0x193 net/libnet.a(nfs.o)
+                0x57e283e1      0x193 net/libnet.a(nfs.o)
                                 0x1a9 (size before relaxing)
  .rodata.str1.1
-                0x57e2857a       0x20 net/libnet.a(rarp.o)
+                0x57e28574       0x20 net/libnet.a(rarp.o)
                                  0x47 (size before relaxing)
  .rodata.str1.1
-                0x57e2859a      0x162 net/libnet.a(tftp.o)
+                0x57e28594      0x162 net/libnet.a(tftp.o)
                                 0x249 (size before relaxing)
  .rodata.str1.1
-                0x57e286fc       0x70 net/libnet.a(bootp.o)
+                0x57e286f6       0x70 net/libnet.a(bootp.o)
                                  0xad (size before relaxing)
  .rodata.str1.1
-                0x57e2876c      0x37a drivers/mtd/libmtd.a(cfi_flash.o)
+                0x57e28766      0x37a drivers/mtd/libmtd.a(cfi_flash.o)
                                 0x37f (size before relaxing)
  .rodata.str1.1
-                0x57e28ae6       0x20 drivers/mtd/libmtd.a(jedec_flash.o)
+                0x57e28ae0       0x20 drivers/mtd/libmtd.a(jedec_flash.o)
                                  0x3f (size before relaxing)
  .rodata.str1.1
-                0x57e28b06        0x8 drivers/mtd/nand/libnand.a(nand.o)
+                0x57e28b00        0x8 drivers/mtd/nand/libnand.a(nand.o)
  .rodata.str1.1
-                0x57e28b0e      0x2e3 drivers/mtd/nand/libnand.a(nand_base.o)
+                0x57e28b08      0x2e3 drivers/mtd/nand/libnand.a(nand_base.o)
  .rodata.str1.1
-                0x57e28df1      0x309 drivers/mtd/nand/libnand.a(nand_bbt.o)
+                0x57e28deb      0x309 drivers/mtd/nand/libnand.a(nand_bbt.o)
  .rodata.str1.1
-                0x57e290fa      0x31f drivers/mtd/nand/libnand.a(nand_ids.o)
+                0x57e290f4      0x31f drivers/mtd/nand/libnand.a(nand_ids.o)
                                 0x335 (size before relaxing)
  .rodata.str1.1
-                0x57e29419       0x91 drivers/mtd/nand/libnand.a(s3c64xx.o)
+                0x57e29413       0x91 drivers/mtd/nand/libnand.a(s3c64xx.o)
  .rodata.str1.1
-                0x57e294aa       0xaa common/libcommon.a(cmd_bdinfo.o)
+                0x57e294a4       0xaa common/libcommon.a(cmd_bdinfo.o)
                                  0xb3 (size before relaxing)
  .rodata.str1.1
-                0x57e29554       0xef common/libcommon.a(cmd_boot.o)
+                0x57e2954e       0xef common/libcommon.a(cmd_boot.o)
                                  0xf0 (size before relaxing)
  .rodata.str1.1
-                0x57e29643      0x867 common/libcommon.a(cmd_bootm.o)
+                0x57e2963d      0x867 common/libcommon.a(cmd_bootm.o)
                                 0x8c8 (size before relaxing)
  .rodata.str1.1
-                0x57e29eaa       0xd9 common/libcommon.a(cmd_cache.o)
+                0x57e29ea4       0xd9 common/libcommon.a(cmd_cache.o)
                                 0x107 (size before relaxing)
  .rodata.str1.1
-                0x57e29f83       0x5c common/libcommon.a(cmd_console.o)
+                0x57e29f7d       0x5c common/libcommon.a(cmd_console.o)
                                  0x61 (size before relaxing)
  .rodata.str1.1
-                0x57e29fdf       0x50 common/libcommon.a(cmd_echo.o)
+                0x57e29fd9       0x50 common/libcommon.a(cmd_echo.o)
                                  0x55 (size before relaxing)
  .rodata.str1.1
-                0x57e2a02f      0x278 common/libcommon.a(cmd_elf.o)
+                0x57e2a029      0x278 common/libcommon.a(cmd_elf.o)
                                 0x29a (size before relaxing)
  .rodata.str1.1
-                0x57e2a2a7       0x11 common/libcommon.a(cmd_exit.o)
+                0x57e2a2a1       0x11 common/libcommon.a(cmd_exit.o)
                                  0x12 (size before relaxing)
  .rodata.str1.1
-                0x57e2a2b8      0x2cd common/libcommon.a(cmd_ext2.o)
+                0x57e2a2b2      0x2cd common/libcommon.a(cmd_ext2.o)
                                 0x39a (size before relaxing)
  .rodata.str1.1
-                0x57e2a585      0x2e1 common/libcommon.a(cmd_fat.o)
+                0x57e2a57f      0x2e1 common/libcommon.a(cmd_fat.o)
                                 0x3a5 (size before relaxing)
  .rodata.str1.1
-                0x57e2a866      0x6fe common/libcommon.a(cmd_flash.o)
+                0x57e2a860      0x6fe common/libcommon.a(cmd_flash.o)
                                 0x730 (size before relaxing)
  .rodata.str1.1
-                0x57e2af64       0x9a common/libcommon.a(cmd_help.o)
+                0x57e2af5e       0x9a common/libcommon.a(cmd_help.o)
                                  0x9b (size before relaxing)
  .rodata.str1.1
-                0x57e2affe       0xb3 common/libcommon.a(cmd_itest.o)
+                0x57e2aff8       0xb3 common/libcommon.a(cmd_itest.o)
                                  0xb5 (size before relaxing)
  .rodata.str1.1
-                0x57e2b0b1      0x336 common/libcommon.a(cmd_load.o)
+                0x57e2b0ab      0x336 common/libcommon.a(cmd_load.o)
                                 0x353 (size before relaxing)
  .rodata.str1.1
-                0x57e2b3e7      0x47f common/libcommon.a(cmd_mem.o)
+                0x57e2b3e1      0x47f common/libcommon.a(cmd_mem.o)
                                 0x4a9 (size before relaxing)
  .rodata.str1.1
-                0x57e2b866       0x5f common/libcommon.a(cmd_misc.o)
+                0x57e2b860       0x5f common/libcommon.a(cmd_misc.o)
  .rodata.str1.1
-                0x57e2b8c5      0x71e common/libcommon.a(cmd_nand.o)
+                0x57e2b8bf      0x71e common/libcommon.a(cmd_nand.o)
                                 0x773 (size before relaxing)
  .rodata.str1.1
-                0x57e2bfe3      0x1ac common/libcommon.a(cmd_net.o)
+                0x57e2bfdd      0x1ac common/libcommon.a(cmd_net.o)
                                 0x1ee (size before relaxing)
  .rodata.str1.1
-                0x57e2c18f      0x33b common/libcommon.a(cmd_nvedit.o)
+                0x57e2c189      0x33b common/libcommon.a(cmd_nvedit.o)
                                 0x39b (size before relaxing)
  .rodata.str1.1
-                0x57e2c4ca       0x23 common/libcommon.a(cmd_reginfo.o)
+                0x57e2c4c4       0x23 common/libcommon.a(cmd_reginfo.o)
                                  0x24 (size before relaxing)
  .rodata.str1.1
-                0x57e2c4ed      0x101 common/libcommon.a(cmd_source.o)
+                0x57e2c4e7      0x101 common/libcommon.a(cmd_source.o)
                                 0x108 (size before relaxing)
  .rodata.str1.1
-                0x57e2c5ee       0x6e common/libcommon.a(cmd_test.o)
+                0x57e2c5e8       0x6e common/libcommon.a(cmd_test.o)
                                  0x96 (size before relaxing)
  .rodata.str1.1
-                0x57e2c65c      0x828 common/libcommon.a(cmd_usb.o)
+                0x57e2c656      0x828 common/libcommon.a(cmd_usb.o)
                                 0x969 (size before relaxing)
  .rodata.str1.1
-                0x57e2ce84       0x1b common/libcommon.a(cmd_version.o)
+                0x57e2ce7e       0x1b common/libcommon.a(cmd_version.o)
                                  0x24 (size before relaxing)
  .rodata.str1.1
-                0x57e2ce9f      0x17e common/libcommon.a(cmd_ximg.o)
+                0x57e2ce99      0x17e common/libcommon.a(cmd_ximg.o)
                                 0x22f (size before relaxing)
  .rodata.str1.1
-                0x57e2d01d       0x95 common/libcommon.a(command.o)
+                0x57e2d017       0x95 common/libcommon.a(command.o)
  .rodata.str1.1
-                0x57e2d0b2       0x70 common/libcommon.a(console.o)
+                0x57e2d0ac       0x70 common/libcommon.a(console.o)
                                  0x74 (size before relaxing)
  .rodata.str1.1
-                0x57e2d122       0x33 common/libcommon.a(env_common.o)
+                0x57e2d11c       0x33 common/libcommon.a(env_common.o)
  .rodata.str1.1
-                0x57e2d155       0x6e common/libcommon.a(env_nand.o)
+                0x57e2d14f       0x6e common/libcommon.a(env_nand.o)
                                  0x74 (size before relaxing)
  .rodata.str1.1
-                0x57e2d1c3      0x10c common/libcommon.a(flash.o)
+                0x57e2d1bd      0x10c common/libcommon.a(flash.o)
  .rodata.str1.1
-                0x57e2d2cf      0x243 common/libcommon.a(hush.o)
+                0x57e2d2c9      0x243 common/libcommon.a(hush.o)
                                 0x26e (size before relaxing)
  .rodata.str1.1
-                0x57e2d512      0x455 common/libcommon.a(image.o)
+                0x57e2d50c      0x455 common/libcommon.a(image.o)
                                 0x4f0 (size before relaxing)
  .rodata.str1.1
-                0x57e2d967       0x93 common/libcommon.a(main.o)
+                0x57e2d961       0x93 common/libcommon.a(main.o)
                                  0xf7 (size before relaxing)
  .rodata.str1.1
-                0x57e2d9fa        0x7 common/libcommon.a(stdio.o)
+                0x57e2d9f4        0x7 common/libcommon.a(stdio.o)
                                  0x1b (size before relaxing)
  .rodata.str1.1
-                0x57e2da01      0x28b common/libcommon.a(usb.o)
+                0x57e2d9fb      0x28b common/libcommon.a(usb.o)
  .rodata.str1.1
-                0x57e2dc8c      0x1ed common/libcommon.a(usb_storage.o)
+                0x57e2dc86      0x1ed common/libcommon.a(usb_storage.o)
                                 0x1ff (size before relaxing)
  .rodata.str1.1
-                0x57e2de79       0xe3 common/libcommon.a(xyzModem.o)
+                0x57e2de73       0xe3 common/libcommon.a(xyzModem.o)
                                  0xe5 (size before relaxing)
  .rodata.str1.1
-                0x57e2df5c       0x13 board/samsung/smdk6410/libsmdk6410.a(smdk6410.o)
+                0x57e2df56       0x13 board/samsung/smdk6410/libsmdk6410.a(smdk6410.o)
  .rodata.str1.1
-                0x57e2df6f       0x85 lib_generic/libgeneric.a(gunzip.o)
+                0x57e2df69       0x85 lib_generic/libgeneric.a(gunzip.o)
  .rodata.str1.1
-                0x57e2dff4      0x21c lib_generic/libgeneric.a(zlib.o)
+                0x57e2dfee      0x21c lib_generic/libgeneric.a(zlib.o)
                                 0x21d (size before relaxing)
  .rodata.str1.1
-                0x57e2e210       0x42 lib_arm/libarm.a(bootm.o)
+                0x57e2e20a       0x42 lib_arm/libarm.a(bootm.o)
                                  0x4b (size before relaxing)
  .rodata.str1.1
-                0x57e2e252      0x15f fs/fat/libfat.a(fat.o)
+                0x57e2e24c      0x15f fs/fat/libfat.a(fat.o)
                                 0x16d (size before relaxing)
  .rodata.str1.1
-                0x57e2e3b1      0x1be fs/ext2/libext2fs.a(ext2fs.o)
+                0x57e2e3ab      0x1be fs/ext2/libext2fs.a(ext2fs.o)
  .rodata.str1.1
-                0x57e2e56f       0xdc fs/ext2/libext2fs.a(dev.o)
+                0x57e2e569       0xdc fs/ext2/libext2fs.a(dev.o)
  .rodata.str1.1
-                0x57e2e64b      0x1af disk/libdisk.a(part.o)
+                0x57e2e645      0x1af disk/libdisk.a(part.o)
                                 0x1e0 (size before relaxing)
  .rodata.str1.1
-                0x57e2e7fa       0xe5 disk/libdisk.a(part_dos.o)
+                0x57e2e7f4       0xe5 disk/libdisk.a(part_dos.o)
                                  0xf1 (size before relaxing)
  .rodata.str1.1
-                0x57e2e8df      0x24c drivers/mtd/nand/libnand.a(nand_util.o)
+                0x57e2e8d9      0x24c drivers/mtd/nand/libnand.a(nand_util.o)
                                 0x24e (size before relaxing)
  .rodata.str1.1
-                0x57e2eb2b       0x48 drivers/net/libnet.a(cs8900.o)
+                0x57e2eb25       0x48 drivers/net/libnet.a(cs8900.o)
  .rodata.str1.1
-                0x57e2eb73      0x7dd drivers/usb/host/libusb_host.a(ohci-hcd.o)
+                0x57e2eb6d      0x7dd drivers/usb/host/libusb_host.a(ohci-hcd.o)
  .rodata.str1.1
-                0x57e2f350       0x1b /home/linx/Git/uboot2010/lib_arm/eabi_compat.o
-                0x57e2f36c                . = ALIGN (0x4)
+                0x57e2f34a       0x1b /home/linx/Git/uboot2010/lib_arm/eabi_compat.o
+                0x57e2f368                . = ALIGN (0x4)
 
-.data           0x57e2f36c     0x1943
+.data           0x57e2f368     0x1943
  *(.data)
- .data          0x57e2f36c        0x0 cpu/arm1176/start.o
- .data          0x57e2f36c        0x0 cpu/arm1176/s3c64xx/cpu_init.o
- .data          0x57e2f36c        0x0 board/samsung/smdk6410/lowlevel_init.o
- .data          0x57e2f36c        0x0 cpu/arm1176/nand_cp.o
- .data          0x57e2f36c       0x30 lib_arm/board.o
-                0x57e2f36c                init_sequence
- .data          0x57e2f39c        0x0 lib_generic/libgeneric.a(display_options.o)
- .data          0x57e2f39c        0x0 lib_generic/libgeneric.a(net_utils.o)
- .data          0x57e2f39c        0x0 lib_generic/libgeneric.a(string.o)
- .data          0x57e2f39c        0x0 lib_generic/libgeneric.a(vsprintf.o)
- .data          0x57e2f39c      0x100 lib_generic/libgeneric.a(ctype.o)
-                0x57e2f39c                _ctype
- .data          0x57e2f49c        0x0 lib_generic/libgeneric.a(div64.o)
- .data          0x57e2f49c        0x0 lib_generic/libgeneric.a(time.o)
- .data          0x57e2f49c        0x0 cpu/arm1176/s3c64xx/libs3c64xx.a(speed.o)
- .data          0x57e2f49c        0x0 cpu/arm1176/s3c64xx/libs3c64xx.a(timer.o)
- .data          0x57e2f49c        0x0 lib_arm/libarm.a(interrupts.o)
- .data          0x57e2f49c        0x0 lib_arm/libarm.a(reset.o)
- .data          0x57e2f49c        0x0 net/libnet.a(eth.o)
- .data          0x57e2f49c        0xa net/libnet.a(net.o)
-                0x57e2f4a0                NetBcastAddr
-                0x57e2f49e                NetOurNativeVLAN
-                0x57e2f49c                NetOurVLAN
- *fill*         0x57e2f4a6        0x2 00
- .data          0x57e2f4a8        0x4 net/libnet.a(nfs.o)
- .data          0x57e2f4ac        0x0 net/libnet.a(rarp.o)
- .data          0x57e2f4ac       0x18 net/libnet.a(tftp.o)
-                0x57e2f4c0                TftpRRQTimeoutMSecs
-                0x57e2f4b8                TftpRRQTimeoutCountMax
- .data          0x57e2f4c4        0x0 net/libnet.a(bootp.o)
- .data          0x57e2f4c4        0x4 drivers/mtd/libmtd.a(cfi_flash.o)
- .data          0x57e2f4c8        0x0 drivers/mtd/libmtd.a(jedec_flash.o)
- .data          0x57e2f4c8        0x4 drivers/mtd/nand/libnand.a(nand.o)
-                0x57e2f4c8                nand_curr_device
- .data          0x57e2f4cc      0x920 drivers/mtd/nand/libnand.a(nand_base.o)
- .data          0x57e2fdec      0x10c drivers/mtd/nand/libnand.a(nand_bbt.o)
- .data          0x57e2fef8        0x0 drivers/mtd/nand/libnand.a(nand_ecc.o)
- .data          0x57e2fef8      0x4a0 drivers/mtd/nand/libnand.a(nand_ids.o)
-                0x57e30348                nand_manuf_ids
-                0x57e2fef8                nand_flash_ids
- .data          0x57e30398        0x8 drivers/mtd/nand/libnand.a(s3c64xx.o)
- .data          0x57e303a0        0x0 drivers/serial/libserial.a(s3c64xx.o)
- .data          0x57e303a0        0x0 common/libcommon.a(cmd_bdinfo.o)
- .data          0x57e303a0        0x0 common/libcommon.a(cmd_boot.o)
- .data          0x57e303a0       0x94 common/libcommon.a(cmd_bootm.o)
-                0x57e303a0                load_addr
-                0x57e303a4                cmd_bootm_sub
- .data          0x57e30434        0x0 common/libcommon.a(cmd_cache.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_console.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_echo.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_elf.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_exit.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_ext2.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_fat.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_flash.o)
- .data          0x57e30434        0x0 common/libcommon.a(cmd_help.o)
- .data          0x57e30434       0x68 common/libcommon.a(cmd_itest.o)
-                0x57e30434                op_table
- .data          0x57e3049c        0x4 common/libcommon.a(cmd_load.o)
- .data          0x57e304a0        0x4 common/libcommon.a(cmd_mem.o)
-                0x57e304a0                dp_last_length
- .data          0x57e304a4        0x0 common/libcommon.a(cmd_misc.o)
- .data          0x57e304a4        0x0 common/libcommon.a(cmd_nand.o)
- .data          0x57e304a4        0x0 common/libcommon.a(cmd_net.o)
- .data          0x57e304a4        0x4 common/libcommon.a(cmd_nvedit.o)
- .data          0x57e304a8        0x0 common/libcommon.a(cmd_reginfo.o)
- .data          0x57e304a8        0x0 common/libcommon.a(cmd_source.o)
- .data          0x57e304a8        0x0 common/libcommon.a(cmd_test.o)
- .data          0x57e304a8        0x4 common/libcommon.a(cmd_usb.o)
- .data          0x57e304ac        0x0 common/libcommon.a(cmd_version.o)
- .data          0x57e304ac        0x0 common/libcommon.a(cmd_ximg.o)
- .data          0x57e304ac        0x0 common/libcommon.a(command.o)
- .data          0x57e304ac        0x0 common/libcommon.a(console.o)
- .data          0x57e304ac      0x414 common/libcommon.a(dlmalloc.o)
- .data          0x57e308c0       0x7c common/libcommon.a(env_common.o)
-                0x57e308c0                default_environment
- .data          0x57e3093c        0x8 common/libcommon.a(env_nand.o)
-                0x57e30940                env_name_spec
-                0x57e3093c                env_ptr
- .data          0x57e30944        0x0 common/libcommon.a(exports.o)
- .data          0x57e30944        0x0 common/libcommon.a(flash.o)
- .data          0x57e30944       0xac common/libcommon.a(hush.o)
- .data          0x57e309f0      0x228 common/libcommon.a(image.o)
- .data          0x57e30c18       0x14 common/libcommon.a(main.o)
- .data          0x57e30c2c        0x0 common/libcommon.a(s_record.o)
- .data          0x57e30c2c        0xc common/libcommon.a(stdio.o)
-                0x57e30c2c                stdio_names
- .data          0x57e30c38        0x0 common/libcommon.a(usb.o)
- .data          0x57e30c38       0x20 common/libcommon.a(usb_storage.o)
-                0x57e30c38                us_direction
- .data          0x57e30c58        0x0 common/libcommon.a(xyzModem.o)
- .data          0x57e30c58        0x0 board/samsung/smdk6410/libsmdk6410.a(smdk6410.o)
- .data          0x57e30c58        0x0 lib_generic/libgeneric.a(crc16.o)
- .data          0x57e30c58        0x0 lib_generic/libgeneric.a(crc32.o)
- .data          0x57e30c58        0x0 lib_generic/libgeneric.a(gunzip.o)
- .data          0x57e30c58        0x0 lib_generic/libgeneric.a(zlib.o)
- .data          0x57e30c58        0x0 cpu/arm1176/s3c64xx/libs3c64xx.a(reset.o)
- .data          0x57e30c58        0x0 lib_arm/libarm.a(bootm.o)
- .data          0x57e30c58        0x0 lib_arm/libarm.a(cache.o)
- .data          0x57e30c58        0x0 lib_arm/libarm.a(cache-cp15.o)
- .data          0x57e30c58        0x4 fs/fat/libfat.a(fat.o)
- .data          0x57e30c5c        0x8 fs/ext2/libext2fs.a(ext2fs.o)
-                0x57e30c5c                indir1_blkno
-                0x57e30c60                indir2_blkno
- .data          0x57e30c64        0x0 fs/ext2/libext2fs.a(dev.o)
- .data          0x57e30c64        0x0 disk/libdisk.a(part.o)
- .data          0x57e30c64        0x0 disk/libdisk.a(part_dos.o)
- .data          0x57e30c64        0x0 drivers/mtd/nand/libnand.a(nand_util.o)
- .data          0x57e30c64        0x0 drivers/net/libnet.a(cs8900.o)
- .data          0x57e30c64       0x4b drivers/usb/host/libusb_host.a(ohci-hcd.o)
- .data          0x57e30caf        0x0 drivers/usb/host/libusb_host.a(s3c64xx-hcd.o)
- .data          0x57e30caf        0x0 cpu/arm1176/libarm1176.a(cpu.o)
- .data          0x57e30caf        0x0 /home/linx/Git/uboot2010/lib_arm/eabi_compat.o
- .data          0x57e30caf        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_udivsi3.o)
- .data          0x57e30caf        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_divsi3.o)
- .data          0x57e30caf        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_lshrdi3.o)
- .data          0x57e30caf        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_ashrdi3.o)
- .data          0x57e30caf        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_ashldi3.o)
- .data          0x57e30caf        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_dvmd_lnx.o)
-                0x57e30cb0                . = ALIGN (0x4)
+ .data          0x57e2f368        0x0 cpu/arm1176/start.o
+ .data          0x57e2f368        0x0 cpu/arm1176/s3c64xx/cpu_init.o
+ .data          0x57e2f368        0x0 board/samsung/smdk6410/lowlevel_init.o
+ .data          0x57e2f368        0x0 cpu/arm1176/nand_cp.o
+ .data          0x57e2f368       0x30 lib_arm/board.o
+                0x57e2f368                init_sequence
+ .data          0x57e2f398        0x0 lib_generic/libgeneric.a(display_options.o)
+ .data          0x57e2f398        0x0 lib_generic/libgeneric.a(net_utils.o)
+ .data          0x57e2f398        0x0 lib_generic/libgeneric.a(string.o)
+ .data          0x57e2f398        0x0 lib_generic/libgeneric.a(vsprintf.o)
+ .data          0x57e2f398      0x100 lib_generic/libgeneric.a(ctype.o)
+                0x57e2f398                _ctype
+ .data          0x57e2f498        0x0 lib_generic/libgeneric.a(div64.o)
+ .data          0x57e2f498        0x0 lib_generic/libgeneric.a(time.o)
+ .data          0x57e2f498        0x0 cpu/arm1176/s3c64xx/libs3c64xx.a(speed.o)
+ .data          0x57e2f498        0x0 cpu/arm1176/s3c64xx/libs3c64xx.a(timer.o)
+ .data          0x57e2f498        0x0 lib_arm/libarm.a(interrupts.o)
+ .data          0x57e2f498        0x0 lib_arm/libarm.a(reset.o)
+ .data          0x57e2f498        0x0 net/libnet.a(eth.o)
+ .data          0x57e2f498        0xa net/libnet.a(net.o)
+                0x57e2f49c                NetBcastAddr
+                0x57e2f49a                NetOurNativeVLAN
+                0x57e2f498                NetOurVLAN
+ *fill*         0x57e2f4a2        0x2 00
+ .data          0x57e2f4a4        0x4 net/libnet.a(nfs.o)
+ .data          0x57e2f4a8        0x0 net/libnet.a(rarp.o)
+ .data          0x57e2f4a8       0x18 net/libnet.a(tftp.o)
+                0x57e2f4bc                TftpRRQTimeoutMSecs
+                0x57e2f4b4                TftpRRQTimeoutCountMax
+ .data          0x57e2f4c0        0x0 net/libnet.a(bootp.o)
+ .data          0x57e2f4c0        0x4 drivers/mtd/libmtd.a(cfi_flash.o)
+ .data          0x57e2f4c4        0x0 drivers/mtd/libmtd.a(jedec_flash.o)
+ .data          0x57e2f4c4        0x4 drivers/mtd/nand/libnand.a(nand.o)
+                0x57e2f4c4                nand_curr_device
+ .data          0x57e2f4c8      0x920 drivers/mtd/nand/libnand.a(nand_base.o)
+ .data          0x57e2fde8      0x10c drivers/mtd/nand/libnand.a(nand_bbt.o)
+ .data          0x57e2fef4        0x0 drivers/mtd/nand/libnand.a(nand_ecc.o)
+ .data          0x57e2fef4      0x4a0 drivers/mtd/nand/libnand.a(nand_ids.o)
+                0x57e30344                nand_manuf_ids
+                0x57e2fef4                nand_flash_ids
+ .data          0x57e30394        0x8 drivers/mtd/nand/libnand.a(s3c64xx.o)
+ .data          0x57e3039c        0x0 drivers/serial/libserial.a(s3c64xx.o)
+ .data          0x57e3039c        0x0 common/libcommon.a(cmd_bdinfo.o)
+ .data          0x57e3039c        0x0 common/libcommon.a(cmd_boot.o)
+ .data          0x57e3039c       0x94 common/libcommon.a(cmd_bootm.o)
+                0x57e3039c                load_addr
+                0x57e303a0                cmd_bootm_sub
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_cache.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_console.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_echo.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_elf.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_exit.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_ext2.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_fat.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_flash.o)
+ .data          0x57e30430        0x0 common/libcommon.a(cmd_help.o)
+ .data          0x57e30430       0x68 common/libcommon.a(cmd_itest.o)
+                0x57e30430                op_table
+ .data          0x57e30498        0x4 common/libcommon.a(cmd_load.o)
+ .data          0x57e3049c        0x4 common/libcommon.a(cmd_mem.o)
+                0x57e3049c                dp_last_length
+ .data          0x57e304a0        0x0 common/libcommon.a(cmd_misc.o)
+ .data          0x57e304a0        0x0 common/libcommon.a(cmd_nand.o)
+ .data          0x57e304a0        0x0 common/libcommon.a(cmd_net.o)
+ .data          0x57e304a0        0x4 common/libcommon.a(cmd_nvedit.o)
+ .data          0x57e304a4        0x0 common/libcommon.a(cmd_reginfo.o)
+ .data          0x57e304a4        0x0 common/libcommon.a(cmd_source.o)
+ .data          0x57e304a4        0x0 common/libcommon.a(cmd_test.o)
+ .data          0x57e304a4        0x4 common/libcommon.a(cmd_usb.o)
+ .data          0x57e304a8        0x0 common/libcommon.a(cmd_version.o)
+ .data          0x57e304a8        0x0 common/libcommon.a(cmd_ximg.o)
+ .data          0x57e304a8        0x0 common/libcommon.a(command.o)
+ .data          0x57e304a8        0x0 common/libcommon.a(console.o)
+ .data          0x57e304a8      0x414 common/libcommon.a(dlmalloc.o)
+ .data          0x57e308bc       0x7c common/libcommon.a(env_common.o)
+                0x57e308bc                default_environment
+ .data          0x57e30938        0x8 common/libcommon.a(env_nand.o)
+                0x57e3093c                env_name_spec
+                0x57e30938                env_ptr
+ .data          0x57e30940        0x0 common/libcommon.a(exports.o)
+ .data          0x57e30940        0x0 common/libcommon.a(flash.o)
+ .data          0x57e30940       0xac common/libcommon.a(hush.o)
+ .data          0x57e309ec      0x228 common/libcommon.a(image.o)
+ .data          0x57e30c14       0x14 common/libcommon.a(main.o)
+ .data          0x57e30c28        0x0 common/libcommon.a(s_record.o)
+ .data          0x57e30c28        0xc common/libcommon.a(stdio.o)
+                0x57e30c28                stdio_names
+ .data          0x57e30c34        0x0 common/libcommon.a(usb.o)
+ .data          0x57e30c34       0x20 common/libcommon.a(usb_storage.o)
+                0x57e30c34                us_direction
+ .data          0x57e30c54        0x0 common/libcommon.a(xyzModem.o)
+ .data          0x57e30c54        0x0 board/samsung/smdk6410/libsmdk6410.a(smdk6410.o)
+ .data          0x57e30c54        0x0 lib_generic/libgeneric.a(crc16.o)
+ .data          0x57e30c54        0x0 lib_generic/libgeneric.a(crc32.o)
+ .data          0x57e30c54        0x0 lib_generic/libgeneric.a(gunzip.o)
+ .data          0x57e30c54        0x0 lib_generic/libgeneric.a(zlib.o)
+ .data          0x57e30c54        0x0 cpu/arm1176/s3c64xx/libs3c64xx.a(reset.o)
+ .data          0x57e30c54        0x0 lib_arm/libarm.a(bootm.o)
+ .data          0x57e30c54        0x0 lib_arm/libarm.a(cache.o)
+ .data          0x57e30c54        0x0 lib_arm/libarm.a(cache-cp15.o)
+ .data          0x57e30c54        0x4 fs/fat/libfat.a(fat.o)
+ .data          0x57e30c58        0x8 fs/ext2/libext2fs.a(ext2fs.o)
+                0x57e30c58                indir1_blkno
+                0x57e30c5c                indir2_blkno
+ .data          0x57e30c60        0x0 fs/ext2/libext2fs.a(dev.o)
+ .data          0x57e30c60        0x0 disk/libdisk.a(part.o)
+ .data          0x57e30c60        0x0 disk/libdisk.a(part_dos.o)
+ .data          0x57e30c60        0x0 drivers/mtd/nand/libnand.a(nand_util.o)
+ .data          0x57e30c60        0x0 drivers/net/libnet.a(cs8900.o)
+ .data          0x57e30c60       0x4b drivers/usb/host/libusb_host.a(ohci-hcd.o)
+ .data          0x57e30cab        0x0 drivers/usb/host/libusb_host.a(s3c64xx-hcd.o)
+ .data          0x57e30cab        0x0 cpu/arm1176/libarm1176.a(cpu.o)
+ .data          0x57e30cab        0x0 /home/linx/Git/uboot2010/lib_arm/eabi_compat.o
+ .data          0x57e30cab        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_udivsi3.o)
+ .data          0x57e30cab        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_divsi3.o)
+ .data          0x57e30cab        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_lshrdi3.o)
+ .data          0x57e30cab        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_ashrdi3.o)
+ .data          0x57e30cab        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_ashldi3.o)
+ .data          0x57e30cab        0x0 /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t/libgcc.a(_dvmd_lnx.o)
+                0x57e30cac                . = ALIGN (0x4)
 
 .got
  *(.got)
-                0x57e30cb0                __u_boot_cmd_start = .
+                0x57e30cac                __u_boot_cmd_start = .
 
-.u_boot_cmd     0x57e30cb0      0x5d0
+.u_boot_cmd     0x57e30cac      0x5d0
  *(.u_boot_cmd)
- .u_boot_cmd    0x57e30cb0       0x18 common/libcommon.a(cmd_bdinfo.o)
-                0x57e30cb0                __u_boot_cmd_bdinfo
- .u_boot_cmd    0x57e30cc8       0x30 common/libcommon.a(cmd_boot.o)
-                0x57e30ce0                __u_boot_cmd_reset
-                0x57e30cc8                __u_boot_cmd_go
- .u_boot_cmd    0x57e30cf8       0x78 common/libcommon.a(cmd_bootm.o)
-                0x57e30cf8                __u_boot_cmd_bootm
-                0x57e30d40                __u_boot_cmd_iminfo
-                0x57e30d28                __u_boot_cmd_bootd
-                0x57e30d10                __u_boot_cmd_boot
-                0x57e30d58                __u_boot_cmd_imls
- .u_boot_cmd    0x57e30d70       0x30 common/libcommon.a(cmd_cache.o)
-                0x57e30d88                __u_boot_cmd_dcache
-                0x57e30d70                __u_boot_cmd_icache
- .u_boot_cmd    0x57e30da0       0x18 common/libcommon.a(cmd_console.o)
-                0x57e30da0                __u_boot_cmd_coninfo
- .u_boot_cmd    0x57e30db8       0x18 common/libcommon.a(cmd_echo.o)
-                0x57e30db8                __u_boot_cmd_echo
- .u_boot_cmd    0x57e30dd0       0x30 common/libcommon.a(cmd_elf.o)
-                0x57e30de8                __u_boot_cmd_bootvx
-                0x57e30dd0                __u_boot_cmd_bootelf
- .u_boot_cmd    0x57e30e00       0x18 common/libcommon.a(cmd_exit.o)
-                0x57e30e00                __u_boot_cmd_exit
- .u_boot_cmd    0x57e30e18       0x30 common/libcommon.a(cmd_ext2.o)
-                0x57e30e30                __u_boot_cmd_ext2load
-                0x57e30e18                __u_boot_cmd_ext2ls
- .u_boot_cmd    0x57e30e48       0x48 common/libcommon.a(cmd_fat.o)
-                0x57e30e78                __u_boot_cmd_fatinfo
-                0x57e30e48                __u_boot_cmd_fatload
-                0x57e30e60                __u_boot_cmd_fatls
- .u_boot_cmd    0x57e30e90       0x48 common/libcommon.a(cmd_flash.o)
-                0x57e30e90                __u_boot_cmd_flinfo
-                0x57e30ea8                __u_boot_cmd_erase
-                0x57e30ec0                __u_boot_cmd_protect
- .u_boot_cmd    0x57e30ed8       0x30 common/libcommon.a(cmd_help.o)
-                0x57e30ef0                __u_boot_cmd_question_mark
-                0x57e30ed8                __u_boot_cmd_help
- .u_boot_cmd    0x57e30f08       0x18 common/libcommon.a(cmd_itest.o)
-                0x57e30f08                __u_boot_cmd_itest
- .u_boot_cmd    0x57e30f20       0x48 common/libcommon.a(cmd_load.o)
-                0x57e30f50                __u_boot_cmd_loady
-                0x57e30f38                __u_boot_cmd_loadb
-                0x57e30f20                __u_boot_cmd_loads
- .u_boot_cmd    0x57e30f68       0xf0 common/libcommon.a(cmd_mem.o)
-                0x57e30f68                __u_boot_cmd_md
-                0x57e30fe0                __u_boot_cmd_cmp
-                0x57e30fb0                __u_boot_cmd_mw
-                0x57e31028                __u_boot_cmd_loop
-                0x57e31010                __u_boot_cmd_base
-                0x57e30f80                __u_boot_cmd_mm
-                0x57e30ff8                __u_boot_cmd_crc32
-                0x57e30f98                __u_boot_cmd_nm
-                0x57e31040                __u_boot_cmd_mtest
-                0x57e30fc8                __u_boot_cmd_cp
- .u_boot_cmd    0x57e31058       0x18 common/libcommon.a(cmd_misc.o)
-                0x57e31058                __u_boot_cmd_sleep
- .u_boot_cmd    0x57e31070       0x30 common/libcommon.a(cmd_nand.o)
-                0x57e31070                __u_boot_cmd_nand
-                0x57e31088                __u_boot_cmd_nboot
- .u_boot_cmd    0x57e310a0       0x78 common/libcommon.a(cmd_net.o)
-                0x57e310e8                __u_boot_cmd_nfs
-                0x57e31100                __u_boot_cmd_ping
-                0x57e310d0                __u_boot_cmd_rarpboot
-                0x57e310b8                __u_boot_cmd_tftpboot
-                0x57e310a0                __u_boot_cmd_bootp
- .u_boot_cmd    0x57e31118       0x78 common/libcommon.a(cmd_nvedit.o)
-                0x57e31130                __u_boot_cmd_editenv
-                0x57e31178                __u_boot_cmd_run
-                0x57e31118                __u_boot_cmd_saveenv
-                0x57e31148                __u_boot_cmd_printenv
-                0x57e31160                __u_boot_cmd_setenv
- .u_boot_cmd    0x57e31190       0x18 common/libcommon.a(cmd_reginfo.o)
-                0x57e31190                __u_boot_cmd_reginfo
- .u_boot_cmd    0x57e311a8       0x18 common/libcommon.a(cmd_source.o)
-                0x57e311a8                __u_boot_cmd_source
- .u_boot_cmd    0x57e311c0       0x48 common/libcommon.a(cmd_test.o)
-                0x57e311d8                __u_boot_cmd_false
-                0x57e311f0                __u_boot_cmd_true
-                0x57e311c0                __u_boot_cmd_test
- .u_boot_cmd    0x57e31208       0x30 common/libcommon.a(cmd_usb.o)
-                0x57e31208                __u_boot_cmd_usb
-                0x57e31220                __u_boot_cmd_usbboot
- .u_boot_cmd    0x57e31238       0x18 common/libcommon.a(cmd_version.o)
-                0x57e31238                __u_boot_cmd_version
- .u_boot_cmd    0x57e31250       0x18 common/libcommon.a(cmd_ximg.o)
-                0x57e31250                __u_boot_cmd_imxtract
- .u_boot_cmd    0x57e31268       0x18 common/libcommon.a(hush.o)
-                0x57e31268                __u_boot_cmd_showvar
-                0x57e31280                __u_boot_cmd_end = .
-                0x57e31280                . = ALIGN (0x4)
+ .u_boot_cmd    0x57e30cac       0x18 common/libcommon.a(cmd_bdinfo.o)
+                0x57e30cac                __u_boot_cmd_bdinfo
+ .u_boot_cmd    0x57e30cc4       0x30 common/libcommon.a(cmd_boot.o)
+                0x57e30cdc                __u_boot_cmd_reset
+                0x57e30cc4                __u_boot_cmd_go
+ .u_boot_cmd    0x57e30cf4       0x78 common/libcommon.a(cmd_bootm.o)
+                0x57e30cf4                __u_boot_cmd_bootm
+                0x57e30d3c                __u_boot_cmd_iminfo
+                0x57e30d24                __u_boot_cmd_bootd
+                0x57e30d0c                __u_boot_cmd_boot
+                0x57e30d54                __u_boot_cmd_imls
+ .u_boot_cmd    0x57e30d6c       0x30 common/libcommon.a(cmd_cache.o)
+                0x57e30d84                __u_boot_cmd_dcache
+                0x57e30d6c                __u_boot_cmd_icache
+ .u_boot_cmd    0x57e30d9c       0x18 common/libcommon.a(cmd_console.o)
+                0x57e30d9c                __u_boot_cmd_coninfo
+ .u_boot_cmd    0x57e30db4       0x18 common/libcommon.a(cmd_echo.o)
+                0x57e30db4                __u_boot_cmd_echo
+ .u_boot_cmd    0x57e30dcc       0x30 common/libcommon.a(cmd_elf.o)
+                0x57e30de4                __u_boot_cmd_bootvx
+                0x57e30dcc                __u_boot_cmd_bootelf
+ .u_boot_cmd    0x57e30dfc       0x18 common/libcommon.a(cmd_exit.o)
+                0x57e30dfc                __u_boot_cmd_exit
+ .u_boot_cmd    0x57e30e14       0x30 common/libcommon.a(cmd_ext2.o)
+                0x57e30e2c                __u_boot_cmd_ext2load
+                0x57e30e14                __u_boot_cmd_ext2ls
+ .u_boot_cmd    0x57e30e44       0x48 common/libcommon.a(cmd_fat.o)
+                0x57e30e74                __u_boot_cmd_fatinfo
+                0x57e30e44                __u_boot_cmd_fatload
+                0x57e30e5c                __u_boot_cmd_fatls
+ .u_boot_cmd    0x57e30e8c       0x48 common/libcommon.a(cmd_flash.o)
+                0x57e30e8c                __u_boot_cmd_flinfo
+                0x57e30ea4                __u_boot_cmd_erase
+                0x57e30ebc                __u_boot_cmd_protect
+ .u_boot_cmd    0x57e30ed4       0x30 common/libcommon.a(cmd_help.o)
+                0x57e30eec                __u_boot_cmd_question_mark
+                0x57e30ed4                __u_boot_cmd_help
+ .u_boot_cmd    0x57e30f04       0x18 common/libcommon.a(cmd_itest.o)
+                0x57e30f04                __u_boot_cmd_itest
+ .u_boot_cmd    0x57e30f1c       0x48 common/libcommon.a(cmd_load.o)
+                0x57e30f4c                __u_boot_cmd_loady
+                0x57e30f34                __u_boot_cmd_loadb
+                0x57e30f1c                __u_boot_cmd_loads
+ .u_boot_cmd    0x57e30f64       0xf0 common/libcommon.a(cmd_mem.o)
+                0x57e30f64                __u_boot_cmd_md
+                0x57e30fdc                __u_boot_cmd_cmp
+                0x57e30fac                __u_boot_cmd_mw
+                0x57e31024                __u_boot_cmd_loop
+                0x57e3100c                __u_boot_cmd_base
+                0x57e30f7c                __u_boot_cmd_mm
+                0x57e30ff4                __u_boot_cmd_crc32
+                0x57e30f94                __u_boot_cmd_nm
+                0x57e3103c                __u_boot_cmd_mtest
+                0x57e30fc4                __u_boot_cmd_cp
+ .u_boot_cmd    0x57e31054       0x18 common/libcommon.a(cmd_misc.o)
+                0x57e31054                __u_boot_cmd_sleep
+ .u_boot_cmd    0x57e3106c       0x30 common/libcommon.a(cmd_nand.o)
+                0x57e3106c                __u_boot_cmd_nand
+                0x57e31084                __u_boot_cmd_nboot
+ .u_boot_cmd    0x57e3109c       0x78 common/libcommon.a(cmd_net.o)
+                0x57e310e4                __u_boot_cmd_nfs
+                0x57e310fc                __u_boot_cmd_ping
+                0x57e310cc                __u_boot_cmd_rarpboot
+                0x57e310b4                __u_boot_cmd_tftpboot
+                0x57e3109c                __u_boot_cmd_bootp
+ .u_boot_cmd    0x57e31114       0x78 common/libcommon.a(cmd_nvedit.o)
+                0x57e3112c                __u_boot_cmd_editenv
+                0x57e31174                __u_boot_cmd_run
+                0x57e31114                __u_boot_cmd_saveenv
+                0x57e31144                __u_boot_cmd_printenv
+                0x57e3115c                __u_boot_cmd_setenv
+ .u_boot_cmd    0x57e3118c       0x18 common/libcommon.a(cmd_reginfo.o)
+                0x57e3118c                __u_boot_cmd_reginfo
+ .u_boot_cmd    0x57e311a4       0x18 common/libcommon.a(cmd_source.o)
+                0x57e311a4                __u_boot_cmd_source
+ .u_boot_cmd    0x57e311bc       0x48 common/libcommon.a(cmd_test.o)
+                0x57e311d4                __u_boot_cmd_false
+                0x57e311ec                __u_boot_cmd_true
+                0x57e311bc                __u_boot_cmd_test
+ .u_boot_cmd    0x57e31204       0x30 common/libcommon.a(cmd_usb.o)
+                0x57e31204                __u_boot_cmd_usb
+                0x57e3121c                __u_boot_cmd_usbboot
+ .u_boot_cmd    0x57e31234       0x18 common/libcommon.a(cmd_version.o)
+                0x57e31234                __u_boot_cmd_version
+ .u_boot_cmd    0x57e3124c       0x18 common/libcommon.a(cmd_ximg.o)
+                0x57e3124c                __u_boot_cmd_imxtract
+ .u_boot_cmd    0x57e31264       0x18 common/libcommon.a(hush.o)
+                0x57e31264                __u_boot_cmd_showvar
+                0x57e3127c                __u_boot_cmd_end = .
+                0x57e3127c                . = ALIGN (0x4)
 
 .mmudata
  *(.mmudata)
-                0x57e31280                . = ALIGN (0x4)
-                0x57e31280                __bss_start = .
+                0x57e3127c                . = ALIGN (0x4)
+                0x57e3127c                __bss_start = .
 
 .bss            0x57e31300    0x41600
  *(.bss)
