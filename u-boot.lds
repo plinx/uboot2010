@@ -9,9 +9,6 @@ SECTIONS
  {
    cpu/arm1176/start.o (.text)
    cpu/arm1176/s3c64xx/cpu_init.o (.text)
-   board/samsung/smdk6410/lowlevel_init.o (.text)
-   cpu/arm1176/nand_cp.o (.text)
-   lib_arm/board.o (.text)
    *(.text)
  }
  . = ALIGN(4);
