@@ -1,0 +1,1 @@
+/home/linx/kernel/uboot2010/uboot2010/nand_spl/nand_boot.c

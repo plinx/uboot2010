@@ -1,0 +1,493 @@
+for dir in tools examples/standalone examples/api cpu/arm1176 /home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400/ ; do \
+			make -C $dir _depend ; done
+make -C nand_spl/board/samsung/smdk6400 all
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/tools'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/tools'
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/nand_spl/board/samsung/smdk6400'
+arm-linux-gcc  -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -DCONFIG_NAND_SPL -c -o start.o start.S
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/examples/standalone'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/examples/standalone'
+arm-linux-gcc  -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -DCONFIG_NAND_SPL -c -o cpu_init.o cpu_init.S
+arm-linux-gcc  -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -DCONFIG_NAND_SPL -c -o lowlevel_init.o lowlevel_init.S
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/examples/api'
+arm-linux-gcc -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector -DCONFIG_NAND_SPL -c -o nand_boot.o nand_boot.c
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/examples/api'
+arm-linux-gcc -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector -DCONFIG_NAND_SPL -c -o nand_ecc.o nand_ecc.c
+arm-linux-gcc -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector -DCONFIG_NAND_SPL -c -o s3c64xx.o s3c64xx.c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176'
+arm-linux-gcc -E -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t  -ansi -D__ASSEMBLY__ -P - </home/linx/kernel/uboot2010/uboot2010/nand_spl/board/samsung/smdk6400/u-boot.lds >/home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot.lds
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400'
+make[1]: 没有什么可以做的为 `_depend'。
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400'
+make -C tools all
+cd /home/linx/kernel/uboot2010/uboot2010/nand_spl/board/samsung/smdk6400 && arm-linux-ld -Bstatic -T /home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot.lds -Ttext 0  start.o cpu_init.o lowlevel_init.o nand_boot.o nand_ecc.o s3c64xx.o \
+		-Map /home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot-spl.map \
+		-o /home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot-spl
+arm-linux-objcopy --gap-fill=0xff -O binary /home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot-spl /home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot-spl.bin
+make -C examples/standalone all
+arm-linux-objcopy --gap-fill=0xff --pad-to= -O binary /home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot-spl /home/linx/kernel/uboot2010/uboot2010/nand_spl/u-boot-spl-16k.bin
+make -C examples/api all
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/tools'
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic -c -o crc32.o /home/linx/kernel/uboot2010/uboot2010/lib_generic/crc32.c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/nand_spl/board/samsung/smdk6400'
+make -C cpu/arm1176 start.o
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/examples/standalone'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o hello_world.o hello_world.c -c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -c -o env_embedded.o /home/linx/kernel/uboot2010/uboot2010/common/env_embedded.c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/examples/api'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o stubs.o stubs.c -c
+make[1]: 没有什么可以做的为 `all'。
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/examples/api'
+make -C /home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400/ u-boot-nand.lds
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176'
+arm-linux-gcc   -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t   -o start.o start.S -c
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic   -o envcrc.o envcrc.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176'
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic -c -o sha1.o /home/linx/kernel/uboot2010/uboot2010/lib_generic/sha1.c
+arm-linux-ar crv libstubs.a stubs.o
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic   -o gen_eth_addr.o gen_eth_addr.c -c
+a - stubs.o
+arm-linux-ld -g -Ttext 0xc100000 \
+			-o hello_world -e hello_world hello_world.o libstubs.a \
+			-L/usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t -lgcc
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400'
+make[1]: 没有什么可以做的为 `u-boot-nand.lds'。
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400'
+arm-linux-gcc -E -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -include /home/linx/kernel/uboot2010/uboot2010/include/u-boot/u-boot.lds.h  -ansi -D__ASSEMBLY__ -P - </home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400/u-boot-nand.lds >u-boot.lds
+arm-linux-objcopy -O srec hello_world hello_world.srec 2>/dev/null
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic   -o img2srec.o img2srec.c -c
+arm-linux-objcopy -O binary hello_world hello_world.bin 2>/dev/null
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES   -o default_image.o default_image.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/examples/standalone'
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES   -o fit_image.o fit_image.c -c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -c -o image.o /home/linx/kernel/uboot2010/uboot2010/common/image.c
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES   -o imximage.o imximage.c -c
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES   -o kwbimage.o kwbimage.c -c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic -c -o md5.o /home/linx/kernel/uboot2010/uboot2010/lib_generic/md5.c
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES   -o mkimage.o mkimage.c -c
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES   -o os_support.o os_support.c -c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -c -o fdt.o /home/linx/kernel/uboot2010/uboot2010/libfdt/fdt.c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -c -o fdt_ro.o /home/linx/kernel/uboot2010/uboot2010/libfdt/fdt_ro.c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -c -o fdt_rw.o /home/linx/kernel/uboot2010/uboot2010/libfdt/fdt_rw.c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -c -o fdt_strerror.o /home/linx/kernel/uboot2010/uboot2010/libfdt/fdt_strerror.c
+gcc -g -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -c -o fdt_wip.o /home/linx/kernel/uboot2010/uboot2010/libfdt/fdt_wip.c
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic  -o envcrc crc32.o env_embedded.o envcrc.o sha1.o
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic  -o gen_eth_addr gen_eth_addr.o
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic  -o img2srec img2srec.o
+strip gen_eth_addr
+gcc -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer -idirafter /home/linx/kernel/uboot2010/uboot2010/include -idirafter /home/linx/kernel/uboot2010/uboot2010/include2 -idirafter /home/linx/kernel/uboot2010/uboot2010/include -I /home/linx/kernel/uboot2010/uboot2010/libfdt -I /home/linx/kernel/uboot2010/uboot2010/tools -DTEXT_BASE=0x57e00000 -DUSE_HOSTCC -D__KERNEL_STRICT_NAMES -pedantic  -o mkimage crc32.o default_image.o fit_image.o image.o imximage.o kwbimage.o md5.o mkimage.o os_support.o sha1.o fdt.o fdt_ro.o fdt_rw.o fdt_strerror.o fdt_wip.o
+strip img2srec
+strip mkimage
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/tools'
+make -C lib_generic/
+make -C lib_generic/lzma/
+make -C lib_generic/lzo/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/lib_generic'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o crc16.o crc16.c -c
+make -C cpu/arm1176/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/lib_generic/lzma'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o crc32.o crc32.c -c
+arm-linux-ar crv liblzma.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/lib_generic/lzo'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/lib_generic/lzma'
+make -C cpu/arm1176/s3c64xx/
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o ctype.o ctype.c -c
+arm-linux-ar crv liblzo.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cpu.o cpu.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/lib_generic/lzo'
+make -C lib_arm/
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o display_options.o display_options.c -c
+arm-linux-ar crv libarm1176.a cpu.o
+a - cpu.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176'
+make -C fs/cramfs/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176/s3c64xx'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o div64.o div64.c -c
+arm-linux-gcc   -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t   -o reset.o reset.S -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o gunzip.o gunzip.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/lib_arm'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o board.o board.c -c
+arm-linux-gcc   -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t   -o cpu_init.o cpu_init.S -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/cramfs'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o speed.o speed.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o ldiv.o ldiv.c -c
+arm-linux-ar crv libcramfs.a 
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o bootm.o bootm.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o net_utils.o net_utils.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/cramfs'
+make -C fs/fat/
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o timer.o timer.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cache.o cache.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o string.o string.c -c
+arm-linux-ar crv libs3c64xx.a reset.o cpu_init.o speed.o timer.o
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cache-cp15.o cache-cp15.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/fat'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o fat.o fat.c -c
+a - reset.o
+a - cpu_init.o
+a - speed.o
+a - timer.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/cpu/arm1176/s3c64xx'
+make -C fs/fdos/
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o strmhz.o strmhz.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o interrupts.o interrupts.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o time.o time.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/fdos'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o reset.o reset.c -c
+arm-linux-ar crv libfdos.a 
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o vsprintf.o vsprintf.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o file.o file.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o eabi_compat.o eabi_compat.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/fdos'
+make -C fs/jffs2/
+arm-linux-ar crv libfat.a fat.o file.o
+arm-linux-ar crv libarm.a board.o bootm.o cache.o cache-cp15.o interrupts.o reset.o
+a - fat.o
+a - file.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/fat'
+make -C fs/reiserfs/
+a - board.o
+a - bootm.o
+a - cache.o
+a - cache-cp15.o
+a - interrupts.o
+a - reset.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/lib_arm'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o zlib.o zlib.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/jffs2'
+make -C fs/ext2/
+arm-linux-ar crv libjffs2.a 
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/jffs2'
+make -C fs/yaffs2/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/reiserfs'
+arm-linux-ar crv libreiserfs.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/ext2'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o ext2fs.o ext2fs.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/reiserfs'
+make -C fs/ubifs/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/yaffs2'
+arm-linux-ar crv libyaffs2.a 
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/yaffs2'
+make -C net/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/fs/ubifs'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o dev.o dev.c -c
+arm-linux-ar crv libgeneric.a crc16.o crc32.o ctype.o display_options.o div64.o gunzip.o ldiv.o net_utils.o string.o strmhz.o time.o vsprintf.o zlib.o
+arm-linux-ar crv libubifs.a 
+a - crc16.o
+a - crc32.o
+a - ctype.o
+a - display_options.o
+a - div64.o
+a - gunzip.o
+a - ldiv.o
+a - net_utils.o
+a - string.o
+a - strmhz.o
+a - time.o
+a - vsprintf.o
+a - zlib.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/lib_generic'
+make -C disk/
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/ubifs'
+arm-linux-ar crv libext2fs.a ext2fs.o dev.o
+make -C drivers/bios_emulator/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/net'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o bootp.o bootp.c -c
+a - ext2fs.o
+a - dev.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/fs/ext2'
+make -C drivers/block/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/disk'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o part.o part.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o eth.o eth.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/bios_emulator'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o part_dos.o part_dos.c -c
+arm-linux-ar crv libatibiosemu.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/block'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/bios_emulator'
+make -C drivers/dma/
+arm-linux-ar crv libblock.a 
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o net.o net.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/block'
+make -C drivers/fpga/
+arm-linux-ar crv libdisk.a part.o part_dos.o
+a - part.o
+a - part_dos.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/disk'
+make -C drivers/gpio/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/dma'
+arm-linux-ar crv libdma.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/fpga'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/dma'
+make -C drivers/hwmon/
+arm-linux-ar crv libfpga.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/gpio'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o nfs.o nfs.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/fpga'
+make -C drivers/i2c/
+arm-linux-ar crv libgpio.a 
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/gpio'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o rarp.o rarp.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/hwmon'
+arm-linux-ar crv libhwmon.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/i2c'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o tftp.o tftp.c -c
+make -C drivers/input/
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/hwmon'
+arm-linux-ar crv libi2c.a 
+make -C drivers/misc/
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/i2c'
+arm-linux-ar crv libnet.a bootp.o eth.o net.o nfs.o rarp.o tftp.o
+make -C drivers/mmc/
+a - bootp.o
+a - eth.o
+a - net.o
+a - nfs.o
+a - rarp.o
+a - tftp.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/net'
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/input'
+make -C drivers/mtd/
+arm-linux-ar crv libinput.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/misc'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/input'
+make -C drivers/mtd/nand/
+arm-linux-ar crv libmisc.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mmc'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/misc'
+make -C drivers/mtd/onenand/
+arm-linux-ar crv libmmc.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cfi_flash.o cfi_flash.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mmc'
+make -C drivers/mtd/ubi/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/nand'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o nand.o nand.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/onenand'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o nand_base.o nand_base.c -c
+arm-linux-ar crv libonenand.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/ubi'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/onenand'
+make -C drivers/mtd/spi/
+arm-linux-ar crv libubi.a 
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o jedec_flash.o jedec_flash.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/ubi'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o nand_bbt.o nand_bbt.c -c
+arm-linux-ar crv libmtd.a cfi_flash.o jedec_flash.o
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/spi'
+a - cfi_flash.o
+a - jedec_flash.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd'
+make -C drivers/net/
+arm-linux-ar crv libspi_flash.a 
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/spi'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o nand_ecc.o nand_ecc.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o nand_ids.o nand_ids.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/net'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cs8900.o cs8900.c -c
+make -C drivers/net/phy/
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o nand_util.o nand_util.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o s3c64xx.o s3c64xx.c -c
+arm-linux-ar crv libnet.a cs8900.o
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/net/phy'
+a - cs8900.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/net'
+make -C drivers/pci/
+arm-linux-ar crv libphy.a 
+arm-linux-ar crv libnand.a nand.o nand_base.o nand_bbt.o nand_ecc.o nand_ids.o nand_util.o s3c64xx.o
+make -C drivers/pcmcia/
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/net/phy'
+a - nand.o
+a - nand_base.o
+a - nand_bbt.o
+a - nand_ecc.o
+a - nand_ids.o
+a - nand_util.o
+a - s3c64xx.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/nand'
+make -C drivers/power/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/pci'
+make -C drivers/spi/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/pcmcia'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o rpx_pcmcia.o rpx_pcmcia.c -c
+arm-linux-ar crv libpci.a 
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/pci'
+make -C drivers/rtc/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/power'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o tqm8xx_pcmcia.o tqm8xx_pcmcia.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/spi'
+arm-linux-ar crv libpower.a 
+arm-linux-ar crv libpcmcia.a rpx_pcmcia.o tqm8xx_pcmcia.o
+arm-linux-ar crv libspi.a 
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/power'
+make -C drivers/serial/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/rtc'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o date.o date.c -c
+a - rpx_pcmcia.o
+a - tqm8xx_pcmcia.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/pcmcia'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/spi'
+make -C drivers/twserial/
+arm-linux-ar crv librtc.a date.o
+make -C drivers/usb/gadget/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/serial'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o s3c64xx.o s3c64xx.c -c
+a - date.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/rtc'
+make -C drivers/usb/host/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/twserial'
+arm-linux-ar crv libserial.a s3c64xx.o
+arm-linux-ar crv libtws.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/gadget'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/twserial'
+make -C drivers/usb/musb/
+a - s3c64xx.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/serial'
+arm-linux-ar crv libusb_gadget.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/host'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o ohci-hcd.o ohci-hcd.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/gadget'
+make -C drivers/usb/phy/
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o s3c64xx-hcd.o s3c64xx-hcd.c -c
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/musb'
+make -C drivers/video/
+arm-linux-ar crv libusb_musb.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/phy'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o twl4030.o twl4030.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/musb'
+make -C drivers/watchdog/
+arm-linux-ar crv libusb_host.a ohci-hcd.o s3c64xx-hcd.o
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/video'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o videomodes.o videomodes.c -c
+arm-linux-ar crv libusb_phy.a twl4030.o
+a - ohci-hcd.o
+a - s3c64xx-hcd.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/host'
+make -C common/
+a - twl4030.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/usb/phy'
+make -C libfdt/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/watchdog'
+arm-linux-ar crv libvideo.a videomodes.o
+arm-linux-ar crv libwatchdog.a 
+a - videomodes.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/video'
+make -C api/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/common'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_bdinfo.o cmd_bdinfo.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/drivers/watchdog'
+make -C post/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/libfdt'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_boot.o cmd_boot.c -c
+arm-linux-ar crv libfdt.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/api'
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/libfdt'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_bootm.o cmd_bootm.c -c
+arm-linux-ar crv libapi.a 
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/post'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_cache.o cmd_cache.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/api'
+(echo create libpost.a; for lib in   ; \
+	 do echo addlib $lib; done; echo save) \
+	| arm-linux-ar -M
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_console.o cmd_console.c -c
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/post'
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_echo.o cmd_echo.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_elf.o cmd_elf.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_exit.o cmd_exit.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_ext2.o cmd_ext2.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_fat.o cmd_fat.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_flash.o cmd_flash.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_help.o cmd_help.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_itest.o cmd_itest.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_load.o cmd_load.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_mem.o cmd_mem.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_misc.o cmd_misc.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_nand.o cmd_nand.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_net.o cmd_net.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_nvedit.o cmd_nvedit.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_pcmcia.o cmd_pcmcia.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_reginfo.o cmd_reginfo.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_source.o cmd_source.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_test.o cmd_test.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_usb.o cmd_usb.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_version.o cmd_version.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o cmd_ximg.o cmd_ximg.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o command.o command.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o console.o console.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o dlmalloc.o dlmalloc.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o env_common.o env_common.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o env_nand.o env_nand.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o exports.o exports.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o flash.o flash.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o hush.o hush.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o image.o image.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o main.o main.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o memsize.o memsize.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o s_record.o s_record.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o stdio.o stdio.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o usb.o usb.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o usb_storage.o usb_storage.c -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o xyzModem.o xyzModem.c -c
+arm-linux-ar crv libcommon.a cmd_bdinfo.o cmd_boot.o cmd_bootm.o cmd_cache.o cmd_console.o cmd_echo.o cmd_elf.o cmd_exit.o cmd_ext2.o cmd_fat.o cmd_flash.o cmd_help.o cmd_itest.o cmd_load.o cmd_mem.o cmd_misc.o cmd_nand.o cmd_net.o cmd_nvedit.o cmd_pcmcia.o cmd_reginfo.o cmd_source.o cmd_test.o cmd_usb.o cmd_version.o cmd_ximg.o command.o console.o dlmalloc.o env_common.o env_nand.o exports.o flash.o hush.o image.o main.o memsize.o s_record.o stdio.o usb.o usb_storage.o xyzModem.o
+a - cmd_bdinfo.o
+a - cmd_boot.o
+a - cmd_bootm.o
+a - cmd_cache.o
+a - cmd_console.o
+a - cmd_echo.o
+a - cmd_elf.o
+a - cmd_exit.o
+a - cmd_ext2.o
+a - cmd_fat.o
+a - cmd_flash.o
+a - cmd_help.o
+a - cmd_itest.o
+a - cmd_load.o
+a - cmd_mem.o
+a - cmd_misc.o
+a - cmd_nand.o
+a - cmd_net.o
+a - cmd_nvedit.o
+a - cmd_pcmcia.o
+a - cmd_reginfo.o
+a - cmd_source.o
+a - cmd_test.o
+a - cmd_usb.o
+a - cmd_version.o
+a - cmd_ximg.o
+a - command.o
+a - console.o
+a - dlmalloc.o
+a - env_common.o
+a - env_nand.o
+a - exports.o
+a - flash.o
+a - hush.o
+a - image.o
+a - main.o
+a - memsize.o
+a - s_record.o
+a - stdio.o
+a - usb.o
+a - usb_storage.o
+a - xyzModem.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/common'
+make -C board/samsung/smdk6400/
+make[1]: 正在进入目录 `/home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400'
+arm-linux-gcc   -D__ASSEMBLY__ -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t   -o lowlevel_init.o lowlevel_init.S -c
+arm-linux-gcc  -g  -Os   -fno-common -ffixed-r8 -msoft-float  -fno-common -ffixed-r8 -msoft-float  -D__KERNEL__ -DTEXT_BASE=0x57e00000 -I/home/linx/kernel/uboot2010/uboot2010/include -fno-builtin -ffreestanding -nostdinc -isystem /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/include -pipe  -DCONFIG_ARM -D__ARM__ -marm  -mabi=aapcs-linux -mno-thumb-interwork -march=armv5t -march=armv5t -Wall -Wstrict-prototypes -fno-stack-protector   -o smdk6400.o smdk6400.c -c
+arm-linux-ar crv libsmdk6400.a lowlevel_init.o smdk6400.o
+a - lowlevel_init.o
+a - smdk6400.o
+make[1]:正在离开目录 `/home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6400'
+UNDEF_SYM=`arm-linux-objdump -x board/samsung/smdk6400/libsmdk6400.a lib_generic/libgeneric.a lib_generic/lzma/liblzma.a lib_generic/lzo/liblzo.a cpu/arm1176/libarm1176.a cpu/arm1176/s3c64xx/libs3c64xx.a lib_arm/libarm.a fs/cramfs/libcramfs.a fs/fat/libfat.a fs/fdos/libfdos.a fs/jffs2/libjffs2.a fs/reiserfs/libreiserfs.a fs/ext2/libext2fs.a fs/yaffs2/libyaffs2.a fs/ubifs/libubifs.a net/libnet.a disk/libdisk.a drivers/bios_emulator/libatibiosemu.a drivers/block/libblock.a drivers/dma/libdma.a drivers/fpga/libfpga.a drivers/gpio/libgpio.a drivers/hwmon/libhwmon.a drivers/i2c/libi2c.a drivers/input/libinput.a drivers/misc/libmisc.a drivers/mmc/libmmc.a drivers/mtd/libmtd.a drivers/mtd/nand/libnand.a drivers/mtd/onenand/libonenand.a drivers/mtd/ubi/libubi.a drivers/mtd/spi/libspi_flash.a drivers/net/libnet.a drivers/net/phy/libphy.a drivers/pci/libpci.a drivers/pcmcia/libpcmcia.a drivers/power/libpower.a drivers/spi/libspi.a drivers/rtc/librtc.a drivers/serial/libserial.a drivers/twserial/libtws.a drivers/usb/gadget/libusb_gadget.a drivers/usb/host/libusb_host.a drivers/usb/musb/libusb_musb.a drivers/usb/phy/libusb_phy.a drivers/video/libvideo.a drivers/watchdog/libwatchdog.a common/libcommon.a libfdt/libfdt.a api/libapi.a post/libpost.a | sed  -n -e 's/.*\(__u_boot_cmd_.*\)/-u\1/p'|sort|uniq`; cd /home/linx/kernel/uboot2010/uboot2010 && arm-linux-ld -Bstatic -T u-boot.lds  -Ttext 0x57e00000 $UNDEF_SYM cpu/arm1176/start.o --start-group lib_generic/libgeneric.a lib_generic/lzma/liblzma.a lib_generic/lzo/liblzo.a cpu/arm1176/libarm1176.a cpu/arm1176/s3c64xx/libs3c64xx.a lib_arm/libarm.a fs/cramfs/libcramfs.a fs/fat/libfat.a fs/fdos/libfdos.a fs/jffs2/libjffs2.a fs/reiserfs/libreiserfs.a fs/ext2/libext2fs.a fs/yaffs2/libyaffs2.a fs/ubifs/libubifs.a net/libnet.a disk/libdisk.a drivers/bios_emulator/libatibiosemu.a drivers/block/libblock.a drivers/dma/libdma.a drivers/fpga/libfpga.a drivers/gpio/libgpio.a drivers/hwmon/libhwmon.a drivers/i2c/libi2c.a drivers/input/libinput.a drivers/misc/libmisc.a drivers/mmc/libmmc.a drivers/mtd/libmtd.a drivers/mtd/nand/libnand.a drivers/mtd/onenand/libonenand.a drivers/mtd/ubi/libubi.a drivers/mtd/spi/libspi_flash.a drivers/net/libnet.a drivers/net/phy/libphy.a drivers/pci/libpci.a drivers/pcmcia/libpcmcia.a drivers/power/libpower.a drivers/spi/libspi.a drivers/rtc/librtc.a drivers/serial/libserial.a drivers/twserial/libtws.a drivers/usb/gadget/libusb_gadget.a drivers/usb/host/libusb_host.a drivers/usb/musb/libusb_musb.a drivers/usb/phy/libusb_phy.a drivers/video/libvideo.a drivers/watchdog/libwatchdog.a common/libcommon.a libfdt/libfdt.a api/libapi.a post/libpost.a board/samsung/smdk6400/libsmdk6400.a --end-group /home/linx/kernel/uboot2010/uboot2010/lib_arm/eabi_compat.o -L /usr/local/arm/4.3.2/bin/../lib/gcc/arm-none-linux-gnueabi/4.3.2/armv4t -lgcc -Map u-boot.map -o u-boot
+arm-linux-objcopy -O srec u-boot u-boot.srec
+arm-linux-objcopy --gap-fill=0xff -O binary u-boot u-boot.bin
+cat nand_spl/u-boot-spl-16k.bin u-boot.bin > u-boot-nand.bin

@@ -1,0 +1,1 @@
+/home/linx/kernel/uboot2010/uboot2010/board/samsung/smdk6410/lowlevel_init.S

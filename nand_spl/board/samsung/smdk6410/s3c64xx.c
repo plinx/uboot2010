@@ -1,0 +1,1 @@
+/home/linx/kernel/uboot2010/uboot2010/drivers/mtd/nand/s3c64xx.c
