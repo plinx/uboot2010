@@ -160,14 +160,14 @@ OUTPUT(/home/linx/Git/uboot2010/nand_spl/u-boot-spl elf32-littlearm)
  .debug_line    0x0000046f      0x1c1 s3c64xx.o
  .debug_line    0x00000630      0x10b nand_cp.o
 
-.debug_info     0x00000000     0x3257
+.debug_info     0x00000000     0x323e
  .debug_info    0x00000000       0x6a start.o
  .debug_info    0x0000006a       0x6d cpu_init.o
- .debug_info    0x000000d7     0x130c nand_boot.o
- .debug_info    0x000013e3       0x72 lowlevel_init.o
- .debug_info    0x00001455      0x900 nand_ecc.o
- .debug_info    0x00001d55     0x1327 s3c64xx.o
- .debug_info    0x0000307c      0x1db nand_cp.o
+ .debug_info    0x000000d7     0x130b nand_boot.o
+ .debug_info    0x000013e2       0x72 lowlevel_init.o
+ .debug_info    0x00001454      0x8e9 nand_ecc.o
+ .debug_info    0x00001d3d     0x1326 s3c64xx.o
+ .debug_info    0x00003063      0x1db nand_cp.o
 
 .debug_abbrev   0x00000000      0x7a5
  .debug_abbrev  0x00000000       0x14 start.o
@@ -224,7 +224,7 @@ OUTPUT(/home/linx/Git/uboot2010/nand_spl/u-boot-spl elf32-littlearm)
  .debug_str     0x00000000      0x726 nand_boot.o
                                 0x832 (size before relaxing)
  .debug_str     0x00000726       0x37 nand_ecc.o
-                                0x4a9 (size before relaxing)
+                                0x49a (size before relaxing)
  .debug_str     0x0000075d      0x13a s3c64xx.o
                                 0x8b3 (size before relaxing)
  .debug_str     0x00000897       0x6a nand_cp.o
