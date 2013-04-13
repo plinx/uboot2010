@@ -34,7 +34,7 @@
 #include <config.h>
 #include <version.h>
 
-#include <asm/arch/s3c6400.h>
+#include <asm/arch/s3c6410.h>
 
 #ifdef CONFIG_SERIAL1
 #define ELFIN_UART_CONSOLE_BASE (ELFIN_UART_BASE + ELFIN_UART0_OFFSET)
@@ -138,9 +138,9 @@ wakeup_reset:
 
 	/* Load return address and jump to kernel */
 	ldr	r0, =(ELFIN_CLOCK_POWER_BASE + INF_REG0_OFFSET)
-	/* r1 = physical address of s3c6400_cpu_resume function */
+	/* r1 = physical address of s3c6410_cpu_resume function */
 	ldr	r1, [r0]
-	/* Jump to kernel (sleep-s3c6400.S) */
+	/* Jump to kernel (sleep-s3c6410.S) */
 	mov	pc, r1
 	nop
 	nop
@@ -182,9 +182,9 @@ check_syncack:
 
 	/*
 	 * This was unconditional in original Samsung sources, but it doesn't
-	 * seem to make much sense on S3C6400.
+	 * seem to make much sense on S3C6410.
 	 */
-#ifndef CONFIG_S3C6400
+#ifndef CONFIG_S3C6410
 	ldr	r1, [r0, #OTHERS_OFFSET]
 	bic	r1, r1, #0xC0
 	orr	r1, r1, #0x40
@@ -242,8 +242,8 @@ wait_for_async:
 	ldr	r1, [r0, #OTHERS_OFFSET]
 	orr	r1, r1, #0x20
 	str	r1, [r0, #OTHERS_OFFSET]
-#elif !defined(CONFIG_S3C6400)
-	/* According to 661558um_S3C6400X_rev10.pdf 0x20 is reserved */
+#elif !defined(CONFIG_S3C6410)
+	/* According to 661558um_S3C6410X_rev10.pdf 0x20 is reserved */
 	ldr	r1, [r0, #OTHERS_OFFSET]
 	bic	r1, r1, #0x20
 	str	r1, [r0, #OTHERS_OFFSET]
@@ -265,7 +265,7 @@ uart_asm_init:
 
 #ifdef CONFIG_BOOT_NAND
 /*
- * NAND Interface init for SMDK6400
+ * NAND Interface init for SMDK6410
  */
 nand_asm_init:
 	ldr	r0, =ELFIN_NAND_BASE
@@ -283,7 +283,7 @@ nand_asm_init:
 
 #ifdef CONFIG_ENABLE_MMU
 /*
- * MMU Table for SMDK6400
+ * MMU Table for SMDK6410
  */
 
 	/* form a first-level section entry */

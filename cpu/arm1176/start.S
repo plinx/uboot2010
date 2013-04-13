@@ -1,5 +1,5 @@
 /*
- *  armboot - Startup Code for S3C6400/ARM1176 CPU-core
+ *  armboot - Startup Code for S3C6410/ARM1176 CPU-core
  *
  * Copyright (c) 2007	Samsung Electronics
  *
@@ -35,7 +35,7 @@
 #ifdef CONFIG_ENABLE_MMU
 #include <asm/proc/domain.h>
 #endif
-#include <asm/arch/s3c6400.h>
+#include <asm/arch/s3c6410.h>
 
 #if !defined(CONFIG_ENABLE_MMU) && !defined(CONFIG_SYS_PHY_UBOOT_BASE)
 #define CONFIG_SYS_PHY_UBOOT_BASE	CONFIG_SYS_UBOOT_BASE
@@ -170,23 +170,8 @@ cpu_init_crit:
 	bic	r0, r0, #0x00000087	@ clear bits 7, 2:0 (B--- -CAM)
 	orr	r0, r0, #0x00000002	@ set bit 2 (A) Align
 	orr	r0, r0, #0x00001000	@ set bit 12 (I) I-Cache
-	/* Prepare to disable the MMU */
-	adr	r1, mmu_disable_phys
-	/* We presume we're within the first 1024 bytes */
-	and	r1, r1, #0x3fc
-	ldr	r2, _TEXT_PHY_BASE
-	ldr	r3, =0xfff00000
-	and	r2, r2, r3
-	orr	r2, r2, r1
-	b	mmu_disable
-
-	.align 5
-	/* Run in a single cache-line */
-mmu_disable:
 	mcr	p15, 0, r0, c1, c0, 0
-	nop
-	nop
-	mov	pc, r2
+
 #endif
 
 mmu_disable_phys:
@@ -199,6 +184,24 @@ mmu_disable_phys:
 	 * Go setup Memory and board specific bits prior to relocation.
 	 */
 	bl	lowlevel_init		/* go setup pll,mux,memory */
+
+	/* when we already run in ram, we don't need to relocate U-Boot.
+	 * and actually, memory controller must be configured before U-Boot
+	 * is running in ram.
+	 */
+
+	ldr    r0, =0xff000fff
+
+	bic r1, pc, r0      /* r0 <- current base addr of code */
+	ldr r2, _TEXT_BASE      /* r1 <- original base addr in ram */
+	bic r2, r2, r0      /* r0 <- current base addr of code */
+	cmp     r1, r2                  /* compare r0, r1                  */
+	beq     after_copy      /* r0 == r1 then skip flash copy   */
+
+#ifdef CONFIG_BOOT_NAND
+	mov r0, #0x1000
+	bl  copy_from_nand
+#endif
 
 after_copy:
 #ifdef CONFIG_ENABLE_MMU
@@ -271,6 +274,47 @@ _start_armboot:
 _mmu_table_base:
 	.word mmu_table
 #endif
+
+	/*
+	 * copy U-Boot to SDRAM and jump to ram (from NAND or OneNAND)
+	 * r0: size to be compared
+	 * Load 1'st 2blocks to RAM because U-boot's size is larger than 1block(128k) size
+	 */
+	.globl copy_from_nand
+copy_from_nand:
+	mov r10, lr     /* save return address */
+
+	mov r9, r0
+	/* get ready to call C functions */
+	ldr sp, _TEXT_PHY_BASE  /* setup temp stack pointer */
+	sub sp, sp, #12
+	mov fp, #0          /* no previous frame, so fp=0 */
+	mov r9, #0x1000
+	bl  copy_uboot_to_ram
+
+3:  tst     r0, #0x0
+	bne copy_failed
+
+	ldr r0, =0x0c000000
+	ldr r1, _TEXT_PHY_BASE
+1:  ldr r3, [r0], #4
+	ldr r4, [r1], #4
+	teq r3, r4
+	bne compare_failed  /* not matched */
+	subs    r9, r9, #4
+	bne 1b
+
+4:  mov lr, r10     /* all is OK */
+	mov pc, lr
+
+	copy_failed:
+	nop         /* copy from nand failed */
+	b   copy_failed
+
+	compare_failed:
+	nop         /* compare failed */
+	b   compare_failed
+
 
 #ifndef CONFIG_NAND_SPL
 /*

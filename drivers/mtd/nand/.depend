@@ -335,7 +335,7 @@ s3c64xx.o: s3c64xx.c /home/linx/Git/uboot2010/include/common.h \
   /home/linx/Git/uboot2010/include/linux/mtd/mtd-abi.h \
   /home/linx/Git/uboot2010/include/linux/mtd/nand.h \
   /home/linx/Git/uboot2010/include/linux/mtd/bbm.h \
-  /home/linx/Git/uboot2010/include/asm/arch/s3c6400.h \
+  /home/linx/Git/uboot2010/include/asm/arch/s3c6410.h \
   /home/linx/Git/uboot2010/include/asm/hardware.h \
   /home/linx/Git/uboot2010/include/asm/arch/hardware.h \
   /home/linx/Git/uboot2010/include/asm/sizes.h \

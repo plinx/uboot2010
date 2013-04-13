@@ -28,7 +28,7 @@
 #include <common.h>
 
 #include <nand.h>
-#include <asm/arch/s3c6400.h>
+#include <asm/arch/s3c6410.h>
 
 #include <asm/io.h>
 #include <asm/errno.h>

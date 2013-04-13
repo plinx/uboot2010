@@ -35,7 +35,7 @@ AFLAGS	+= -DCONFIG_NAND_SPL
 CFLAGS	+= -DCONFIG_NAND_SPL
 
 SOBJS	= start.o cpu_init.o lowlevel_init.o
-COBJS	= nand_boot.o nand_ecc.o s3c64xx.o
+COBJS	= nand_boot.o nand_ecc.o s3c64xx.o nand_cp.o
 
 SRCS	:= $(addprefix $(obj),$(SOBJS:.o=.S) $(COBJS:.o=.c))
 OBJS	:= $(addprefix $(obj),$(SOBJS) $(COBJS))
@@ -73,6 +73,9 @@ $(obj)start.S:
 $(obj)cpu_init.S:
 	@rm -f $@
 	@ln -s $(TOPDIR)/cpu/arm1176/s3c64xx/cpu_init.S $@
+$(obj)nand_cp.c:
+	@rm -f $@
+	@ln -s $(TOPDIR)/cpu/arm1176/nand_cp.c $@
 
 # from board directory
 $(obj)lowlevel_init.S:

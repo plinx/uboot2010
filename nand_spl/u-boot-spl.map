@@ -9,110 +9,121 @@ Linker script and memory map
                 0x00000000                . = 0x0
                 0x00000000                . = ALIGN (0x4)
 
-.text           0x00000000      0xb34
+.text           0x00000000      0xd50
  start.o(.text)
- .text          0x00000000       0xb0 start.o
+ .text          0x00000000      0x130 start.o
                 0x00000040                _end_vect
                 0x0000004c                _bss_start
                 0x00000050                _bss_end
                 0x00000048                _armboot_start
+                0x000000c4                copy_from_nand
                 0x00000000                _start
  cpu_init.o(.text)
- .text          0x000000b0      0x124 cpu_init.o
-                0x000000b0                mem_ctrl_asm_init
+ .text          0x00000130      0x124 cpu_init.o
+                0x00000130                mem_ctrl_asm_init
  nand_boot.o(.text)
- .text          0x000001d4      0x350 nand_boot.o
-                0x00000490                nand_boot
+ .text          0x00000254      0x350 nand_boot.o
+                0x00000510                nand_boot
  *(.text)
- .text          0x00000524      0x1e4 lowlevel_init.o
-                0x00000528                lowlevel_init
- .text          0x00000708      0x12c nand_ecc.o
-                0x00000708                nand_correct_data
- .text          0x00000834      0x300 s3c64xx.o
-                0x00000a40                board_nand_init
+ .text          0x000005a4      0x1b8 lowlevel_init.o
+                0x000005a8                lowlevel_init
+ .text          0x0000075c      0x12c nand_ecc.o
+                0x0000075c                nand_correct_data
+ .text          0x00000888      0x300 s3c64xx.o
+                0x00000a94                board_nand_init
+ .text          0x00000b88      0x1c8 nand_cp.o
+                0x00000c48                copy_uboot_to_ram
 
-.glue_7         0x00000b34        0x0
- .glue_7        0x00000b34        0x0 start.o
- .glue_7        0x00000b34        0x0 cpu_init.o
- .glue_7        0x00000b34        0x0 nand_boot.o
- .glue_7        0x00000b34        0x0 lowlevel_init.o
- .glue_7        0x00000b34        0x0 nand_ecc.o
- .glue_7        0x00000b34        0x0 s3c64xx.o
+.glue_7         0x00000d50        0x0
+ .glue_7        0x00000d50        0x0 start.o
+ .glue_7        0x00000d50        0x0 cpu_init.o
+ .glue_7        0x00000d50        0x0 nand_boot.o
+ .glue_7        0x00000d50        0x0 lowlevel_init.o
+ .glue_7        0x00000d50        0x0 nand_ecc.o
+ .glue_7        0x00000d50        0x0 s3c64xx.o
+ .glue_7        0x00000d50        0x0 nand_cp.o
 
-.glue_7t        0x00000b34        0x0
- .glue_7t       0x00000b34        0x0 start.o
- .glue_7t       0x00000b34        0x0 cpu_init.o
- .glue_7t       0x00000b34        0x0 nand_boot.o
- .glue_7t       0x00000b34        0x0 lowlevel_init.o
- .glue_7t       0x00000b34        0x0 nand_ecc.o
- .glue_7t       0x00000b34        0x0 s3c64xx.o
+.glue_7t        0x00000d50        0x0
+ .glue_7t       0x00000d50        0x0 start.o
+ .glue_7t       0x00000d50        0x0 cpu_init.o
+ .glue_7t       0x00000d50        0x0 nand_boot.o
+ .glue_7t       0x00000d50        0x0 lowlevel_init.o
+ .glue_7t       0x00000d50        0x0 nand_ecc.o
+ .glue_7t       0x00000d50        0x0 s3c64xx.o
+ .glue_7t       0x00000d50        0x0 nand_cp.o
 
-.vfp11_veneer   0x00000b34        0x0
- .vfp11_veneer  0x00000b34        0x0 start.o
- .vfp11_veneer  0x00000b34        0x0 cpu_init.o
- .vfp11_veneer  0x00000b34        0x0 nand_boot.o
- .vfp11_veneer  0x00000b34        0x0 lowlevel_init.o
- .vfp11_veneer  0x00000b34        0x0 nand_ecc.o
- .vfp11_veneer  0x00000b34        0x0 s3c64xx.o
+.vfp11_veneer   0x00000d50        0x0
+ .vfp11_veneer  0x00000d50        0x0 start.o
+ .vfp11_veneer  0x00000d50        0x0 cpu_init.o
+ .vfp11_veneer  0x00000d50        0x0 nand_boot.o
+ .vfp11_veneer  0x00000d50        0x0 lowlevel_init.o
+ .vfp11_veneer  0x00000d50        0x0 nand_ecc.o
+ .vfp11_veneer  0x00000d50        0x0 s3c64xx.o
+ .vfp11_veneer  0x00000d50        0x0 nand_cp.o
 
 .janus_2cc_veneer
-                0x00000b34        0x0
+                0x00000d50        0x0
  .janus_2cc_veneer
-                0x00000b34        0x0 start.o
+                0x00000d50        0x0 start.o
  .janus_2cc_veneer
-                0x00000b34        0x0 cpu_init.o
+                0x00000d50        0x0 cpu_init.o
  .janus_2cc_veneer
-                0x00000b34        0x0 nand_boot.o
+                0x00000d50        0x0 nand_boot.o
  .janus_2cc_veneer
-                0x00000b34        0x0 lowlevel_init.o
+                0x00000d50        0x0 lowlevel_init.o
  .janus_2cc_veneer
-                0x00000b34        0x0 nand_ecc.o
+                0x00000d50        0x0 nand_ecc.o
  .janus_2cc_veneer
-                0x00000b34        0x0 s3c64xx.o
+                0x00000d50        0x0 s3c64xx.o
+ .janus_2cc_veneer
+                0x00000d50        0x0 nand_cp.o
 
-.v4_bx          0x00000b34        0x0
- .v4_bx         0x00000b34        0x0 start.o
- .v4_bx         0x00000b34        0x0 cpu_init.o
- .v4_bx         0x00000b34        0x0 nand_boot.o
- .v4_bx         0x00000b34        0x0 lowlevel_init.o
- .v4_bx         0x00000b34        0x0 nand_ecc.o
- .v4_bx         0x00000b34        0x0 s3c64xx.o
-                0x00000b34                . = ALIGN (0x4)
+.v4_bx          0x00000d50        0x0
+ .v4_bx         0x00000d50        0x0 start.o
+ .v4_bx         0x00000d50        0x0 cpu_init.o
+ .v4_bx         0x00000d50        0x0 nand_boot.o
+ .v4_bx         0x00000d50        0x0 lowlevel_init.o
+ .v4_bx         0x00000d50        0x0 nand_ecc.o
+ .v4_bx         0x00000d50        0x0 s3c64xx.o
+ .v4_bx         0x00000d50        0x0 nand_cp.o
+                0x00000d50                . = ALIGN (0x4)
 
 .rodata
  *(SORT(.rodata*))
-                0x00000b34                . = ALIGN (0x4)
+                0x00000d50                . = ALIGN (0x4)
 
-.data           0x00000b34        0x8
+.data           0x00000d50        0x8
  *(.data)
- .data          0x00000b34        0x0 start.o
- .data          0x00000b34        0x0 cpu_init.o
- .data          0x00000b34        0x0 nand_boot.o
- .data          0x00000b34        0x0 lowlevel_init.o
- .data          0x00000b34        0x0 nand_ecc.o
- .data          0x00000b34        0x8 s3c64xx.o
-                0x00000b3c                . = ALIGN (0x4)
+ .data          0x00000d50        0x0 start.o
+ .data          0x00000d50        0x0 cpu_init.o
+ .data          0x00000d50        0x0 nand_boot.o
+ .data          0x00000d50        0x0 lowlevel_init.o
+ .data          0x00000d50        0x0 nand_ecc.o
+ .data          0x00000d50        0x8 s3c64xx.o
+ .data          0x00000d58        0x0 nand_cp.o
+                0x00000d58                . = ALIGN (0x4)
 
 .got
  *(.got)
-                0x00000b3c                __u_boot_cmd_start = .
+                0x00000d58                __u_boot_cmd_start = .
 
 .u_boot_cmd
  *(.u_boot_cmd)
-                0x00000b3c                __u_boot_cmd_end = .
-                0x00000b3c                . = ALIGN (0x4)
-                0x00000b3c                __bss_start = .
+                0x00000d58                __u_boot_cmd_end = .
+                0x00000d58                . = ALIGN (0x4)
+                0x00000d58                __bss_start = .
 
-.bss            0x00000b3c        0x4
+.bss            0x00000d58        0x4
  *(.bss)
- .bss           0x00000b3c        0x0 start.o
- .bss           0x00000b3c        0x0 cpu_init.o
- .bss           0x00000b3c        0x0 nand_boot.o
- .bss           0x00000b3c        0x0 lowlevel_init.o
- .bss           0x00000b3c        0x0 nand_ecc.o
- .bss           0x00000b3c        0x4 s3c64xx.o
-                0x00000b40                . = ALIGN (0x4)
-                0x00000b40                _end = .
+ .bss           0x00000d58        0x0 start.o
+ .bss           0x00000d58        0x0 cpu_init.o
+ .bss           0x00000d58        0x0 nand_boot.o
+ .bss           0x00000d58        0x0 lowlevel_init.o
+ .bss           0x00000d58        0x0 nand_ecc.o
+ .bss           0x00000d58        0x4 s3c64xx.o
+ .bss           0x00000d5c        0x0 nand_cp.o
+                0x00000d5c                . = ALIGN (0x4)
+                0x00000d5c                _end = .
 Address of section .text set to 0x0
 LOAD start.o
 LOAD cpu_init.o
@@ -120,6 +131,7 @@ LOAD lowlevel_init.o
 LOAD nand_boot.o
 LOAD nand_ecc.o
 LOAD s3c64xx.o
+LOAD nand_cp.o
 OUTPUT(/home/linx/Git/uboot2010/nand_spl/u-boot-spl elf32-littlearm)
 
 .ARM.attributes
@@ -136,32 +148,37 @@ OUTPUT(/home/linx/Git/uboot2010/nand_spl/u-boot-spl elf32-littlearm)
                 0x00000070       0x28 nand_ecc.o
  .ARM.attributes
                 0x00000098       0x28 s3c64xx.o
+ .ARM.attributes
+                0x000000c0       0x28 nand_cp.o
 
-.debug_line     0x00000000      0x618
- .debug_line    0x00000000       0x54 start.o
- .debug_line    0x00000054       0x7c cpu_init.o
- .debug_line    0x000000d0      0x1b7 nand_boot.o
- .debug_line    0x00000287       0xaf lowlevel_init.o
- .debug_line    0x00000336      0x121 nand_ecc.o
- .debug_line    0x00000457      0x1c1 s3c64xx.o
+.debug_line     0x00000000      0x73b
+ .debug_line    0x00000000       0x75 start.o
+ .debug_line    0x00000075       0x7c cpu_init.o
+ .debug_line    0x000000f1      0x1b7 nand_boot.o
+ .debug_line    0x000002a8       0xa6 lowlevel_init.o
+ .debug_line    0x0000034e      0x121 nand_ecc.o
+ .debug_line    0x0000046f      0x1c1 s3c64xx.o
+ .debug_line    0x00000630      0x10b nand_cp.o
 
-.debug_info     0x00000000     0x307c
+.debug_info     0x00000000     0x3257
  .debug_info    0x00000000       0x6a start.o
  .debug_info    0x0000006a       0x6d cpu_init.o
  .debug_info    0x000000d7     0x130c nand_boot.o
  .debug_info    0x000013e3       0x72 lowlevel_init.o
  .debug_info    0x00001455      0x900 nand_ecc.o
  .debug_info    0x00001d55     0x1327 s3c64xx.o
+ .debug_info    0x0000307c      0x1db nand_cp.o
 
-.debug_abbrev   0x00000000      0x66b
+.debug_abbrev   0x00000000      0x7a5
  .debug_abbrev  0x00000000       0x14 start.o
  .debug_abbrev  0x00000014       0x14 cpu_init.o
  .debug_abbrev  0x00000028      0x256 nand_boot.o
  .debug_abbrev  0x0000027e       0x14 lowlevel_init.o
  .debug_abbrev  0x00000292      0x1a3 nand_ecc.o
  .debug_abbrev  0x00000435      0x236 s3c64xx.o
+ .debug_abbrev  0x0000066b      0x13a nand_cp.o
 
-.debug_aranges  0x00000000       0xc0
+.debug_aranges  0x00000000       0xe0
  .debug_aranges
                 0x00000000       0x20 start.o
  .debug_aranges
@@ -174,41 +191,50 @@ OUTPUT(/home/linx/Git/uboot2010/nand_spl/u-boot-spl elf32-littlearm)
                 0x00000080       0x20 nand_ecc.o
  .debug_aranges
                 0x000000a0       0x20 s3c64xx.o
+ .debug_aranges
+                0x000000c0       0x20 nand_cp.o
 
-.debug_frame    0x00000000      0x184
+.debug_frame    0x00000000      0x1d4
  .debug_frame   0x00000000       0x74 nand_boot.o
  .debug_frame   0x00000074       0x30 nand_ecc.o
  .debug_frame   0x000000a4       0xe0 s3c64xx.o
+ .debug_frame   0x00000184       0x50 nand_cp.o
 
-.debug_loc      0x00000000      0x610
+.debug_loc      0x00000000      0x776
  .debug_loc     0x00000000      0x264 nand_boot.o
  .debug_loc     0x00000264      0x104 nand_ecc.o
  .debug_loc     0x00000368      0x2a8 s3c64xx.o
+ .debug_loc     0x00000610      0x166 nand_cp.o
 
 .debug_pubnames
-                0x00000000       0x6e
+                0x00000000       0x96
  .debug_pubnames
                 0x00000000       0x20 nand_boot.o
  .debug_pubnames
                 0x00000020       0x28 nand_ecc.o
  .debug_pubnames
                 0x00000048       0x26 s3c64xx.o
+ .debug_pubnames
+                0x0000006e       0x28 nand_cp.o
 
 .debug_ranges   0x00000000       0x60
  .debug_ranges  0x00000000       0x60 nand_boot.o
 
-.debug_str      0x00000000      0x897
+.debug_str      0x00000000      0x901
  .debug_str     0x00000000      0x726 nand_boot.o
                                 0x832 (size before relaxing)
  .debug_str     0x00000726       0x37 nand_ecc.o
                                 0x4a9 (size before relaxing)
  .debug_str     0x0000075d      0x13a s3c64xx.o
                                 0x8b3 (size before relaxing)
+ .debug_str     0x00000897       0x6a nand_cp.o
+                                0x153 (size before relaxing)
 
-.comment        0x00000000       0x7e
+.comment        0x00000000       0xa8
  .comment       0x00000000       0x2a nand_boot.o
  .comment       0x0000002a       0x2a nand_ecc.o
  .comment       0x00000054       0x2a s3c64xx.o
+ .comment       0x0000007e       0x2a nand_cp.o
 
 .note.GNU-stack
                 0x00000000        0x0
@@ -218,3 +244,5 @@ OUTPUT(/home/linx/Git/uboot2010/nand_spl/u-boot-spl elf32-littlearm)
                 0x00000000        0x0 nand_ecc.o
  .note.GNU-stack
                 0x00000000        0x0 s3c64xx.o
+ .note.GNU-stack
+                0x00000000        0x0 nand_cp.o
