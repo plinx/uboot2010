@@ -44,9 +44,13 @@ enum {
    specific to any particular block. */
 struct erase_info {
 	struct mtd_info *mtd;
-	uint64_t addr;
-	uint64_t len;
-	uint64_t fail_addr;
+/*	uint64_t addr;
+ *	uint64_t len;
+ *	uint64_t fail_addr;
+ */
+	u_int32_t addr;
+	u_int32_t len;
+	u_int32_t fail_addr;
 	u_long time;
 	u_long retries;
 	u_int dev;
@@ -58,7 +62,9 @@ struct erase_info {
 };
 
 struct mtd_erase_region_info {
-	uint64_t offset;			/* At which this region starts, from the beginning of the MTD */
+	/
+//uint64_t offset;			/* At which this region starts, from the beginning of the MTD */
+	u_int32_t offset;
 	u_int32_t erasesize;		/* For this region */
 	u_int32_t numblocks;		/* Number of blocks of erasesize in this region */
 	unsigned long *lockmap;		/* If keeping bitmap of locks */
@@ -113,7 +119,8 @@ struct mtd_oob_ops {
 struct mtd_info {
 	u_char type;
 	u_int32_t flags;
-	uint64_t size;	 /* Total size of the MTD */
+//	uint64_t size;	 /* Total size of the MTD */
+	u_int32_t size;	 /* Total size of the MTD */
 
 	/* "Major" erase size for the device. Naïve users may take this
 	 * to be the only erase size available, or may use the more detailed
@@ -205,8 +212,10 @@ struct mtd_info {
 	void (*sync) (struct mtd_info *mtd);
 
 	/* Chip-supported device locking */
-	int (*lock) (struct mtd_info *mtd, loff_t ofs, uint64_t len);
-	int (*unlock) (struct mtd_info *mtd, loff_t ofs, uint64_t len);
+//	int (*lock) (struct mtd_info *mtd, loff_t ofs, uint64_t len);
+//	int (*unlock) (struct mtd_info *mtd, loff_t ofs, uint64_t len);
+	int (*lock) (struct mtd_info *mtd, loff_t ofs, u_int32_t len);
+	int (*unlock) (struct mtd_info *mtd, loff_t ofs, u_int32_t len);
 
 	/* Power Management functions */
 	int (*suspend) (struct mtd_info *mtd);

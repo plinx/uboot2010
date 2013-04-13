@@ -445,10 +445,10 @@ static void dm9000_halt(struct eth_device *netdev)
 	DM9000_DBG("%s\n", __func__);
 
 	/* RESET devie */
-	phy_write(0, 0x8000);	/* PHY RESET */
-	DM9000_iow(DM9000_GPR, 0x01);	/* Power-Down PHY */
-	DM9000_iow(DM9000_IMR, 0x80);	/* Disable all interrupt */
-	DM9000_iow(DM9000_RCR, 0x00);	/* Disable RX */
+//	phy_write(0, 0x8000);	/* PHY RESET */
+//	DM9000_iow(DM9000_GPR, 0x01);	/* Power-Down PHY */
+//	DM9000_iow(DM9000_IMR, 0x80);	/* Disable all interrupt */
+//	DM9000_iow(DM9000_RCR, 0x00);	/* Disable RX */
 }
 
 /*
@@ -467,6 +467,9 @@ static int dm9000_rx(struct eth_device *netdev)
 
 	DM9000_iow(DM9000_ISR, 0x01); /* clear PR status latched in bit 0 */
 
+	DM9000_ior(DM9000_MRRH);
+	DM9000_ior(DM9000_MRRL);
+	
 	/* There is _at least_ 1 package in the fifo, read them all */
 	for (;;) {
 		DM9000_ior(DM9000_MRCMDX);	/* Dummy read */

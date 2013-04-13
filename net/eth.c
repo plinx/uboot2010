@@ -195,6 +195,13 @@ int eth_initialize(bd_t *bis)
 #if defined(CONFIG_MII) || defined(CONFIG_CMD_MII)
 	miiphy_init();
 #endif
+
+        /* for DM9000 init */
+#if defined(CONFIG_DRIVER_DM9000)
+        dm9000_initialize(bis);
+#endif  
+        /*------------------------------*/
+
 	/* Try board-specific initialization first.  If it fails or isn't
 	 * present, try the cpu-specific initialization */
 	if (board_eth_init(bis) < 0)

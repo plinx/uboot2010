@@ -32,6 +32,9 @@
 #ifndef __CONFIG_H
 #define __CONFIG_H
 
+
+#define CONFIG_CMD_BOOTZIMAGE
+
 /*
  * High Level Configuration Options
  * (easy to change)
@@ -77,9 +80,21 @@
  * Hardware drivers
  */
 #define CONFIG_NET_MULTI
-#define CONFIG_CS8900			/* we have a CS8900 on-board	*/
-#define CONFIG_CS8900_BASE	  	0x18800300
-#define CONFIG_CS8900_BUS16		/* follow the Linux driver	*/
+//#define CONFIG_CS8900			/* we have a CS8900 on-board	*/
+//#define CONFIG_CS8900_BASE	  	0x18800300
+//#define CONFIG_CS8900_BUS16		/* follow the Linux driver	*/
+
+#define CONFIG_DRIVER_DM9000    1       /* we have a DM9000 on-board    */
+#define CONFIG_DM9000_BASE              0x18000000
+#define DM9000_IO               CONFIG_DM9000_BASE
+#define DM9000_DATA             (CONFIG_DM9000_BASE+4)
+#define CONFIG_DM9000_USE_16BIT
+
+#define CONFIG_ETHADDR          00:40:5c:26:0a:5b
+#define CONFIG_NETMASK          255.255.255.0
+#define CONFIG_IPADDR           10.0.2.20
+#define CONFIG_SERVERIP         10.0.2.2
+#define CONFIG_GATEWAYIP        2.2.0.10
 
 /*
  * select serial console configuration

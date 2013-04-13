@@ -77,6 +77,8 @@ COBJS-$(CONFIG_CMD_CONSOLE) += cmd_console.o
 COBJS-$(CONFIG_CMD_CPLBINFO) += cmd_cplbinfo.o
 COBJS-$(CONFIG_DATAFLASH_MMC_SELECT) += cmd_dataflash_mmc_mux.o
 COBJS-$(CONFIG_CMD_DATE) += cmd_date.o
+COBJS-$(CONFIG_CMD_BOOTZIMAGE) += cmd_bootzImage.o
+
 ifdef CONFIG_4xx
 COBJS-$(CONFIG_CMD_SETGETDCR) += cmd_dcr.o
 endif
