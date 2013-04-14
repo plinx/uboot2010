@@ -1,1 +1,1 @@
-/home/linx/kernel/uboot2010/nand_spl/nand_boot.c
+/home/linx/Git/uboot2010/nand_spl/nand_boot.c

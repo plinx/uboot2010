@@ -36,7 +36,7 @@
 
 #include <regs.h>
 
-#include "/home/linx/kernel/uboot2010/cpu/arm1176/s3c64xx/usbd-otg-hs.c"
+#include "../cpu/arm1176/s3c64xx/usbd-otg-hs.c"
 
 
 #undef	CMD_USBD_DEBUG

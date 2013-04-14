@@ -1,1 +1,1 @@
-/home/linx/kernel/uboot2010/drivers/mtd/nand/nand_ecc.c
+/home/linx/Git/uboot2010/drivers/mtd/nand/nand_ecc.c

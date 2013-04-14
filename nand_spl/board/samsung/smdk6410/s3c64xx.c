@@ -1,1 +1,1 @@
-/home/linx/kernel/uboot2010/drivers/mtd/nand/s3c64xx.c
+/home/linx/Git/uboot2010/drivers/mtd/nand/s3c64xx.c

@@ -1,13 +1,13 @@
-env_embedded.o: /home/linx/kernel/uboot2010/common/env_embedded.c \
- /home/linx/kernel/uboot2010/include/config.h \
- /home/linx/kernel/uboot2010/include/config_defaults.h \
- /home/linx/kernel/uboot2010/include/configs/smdk6410.h \
- /home/linx/kernel/uboot2010/include/config_cmd_default.h \
- /home/linx/kernel/uboot2010/include/asm/config.h \
- /home/linx/kernel/uboot2010/include/environment.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+env_embedded.o: /home/linx/Git/uboot2010/common/env_embedded.c \
+ /home/linx/Git/uboot2010/include/config.h \
+ /home/linx/Git/uboot2010/include/config_defaults.h \
+ /home/linx/Git/uboot2010/include/configs/smdk6410.h \
+ /home/linx/Git/uboot2010/include/config_cmd_default.h \
+ /home/linx/Git/uboot2010/include/asm/config.h \
+ /home/linx/Git/uboot2010/include/environment.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -31,19 +31,19 @@ env_embedded.o: /home/linx/kernel/uboot2010/common/env_embedded.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h
-image.o: /home/linx/kernel/uboot2010/common/image.c \
- /home/linx/kernel/uboot2010/tools/mkimage.h \
- /home/linx/kernel/uboot2010/tools/os_support.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+image.o: /home/linx/Git/uboot2010/common/image.c \
+ /home/linx/Git/uboot2010/tools/mkimage.h \
+ /home/linx/Git/uboot2010/tools/os_support.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -67,7 +67,7 @@ image.o: /home/linx/kernel/uboot2010/common/image.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
@@ -78,22 +78,22 @@ image.o: /home/linx/kernel/uboot2010/common/image.c \
  /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /home/linx/kernel/uboot2010/include/sha1.h \
- /home/linx/kernel/uboot2010/tools/fdt_host.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/libfdt.h \
- /home/linx/kernel/uboot2010/include/libfdt_env.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /home/linx/kernel/uboot2010/include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt_support.h \
- /home/linx/kernel/uboot2010/include/u-boot/md5.h \
- /home/linx/kernel/uboot2010/include/image.h \
- /home/linx/kernel/uboot2010/include/libfdt.h \
- /home/linx/kernel/uboot2010/include/fdt_support.h
-crc32.o: /home/linx/kernel/uboot2010/lib_generic/crc32.c \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /home/linx/Git/uboot2010/include/sha1.h \
+ /home/linx/Git/uboot2010/tools/fdt_host.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/libfdt.h \
+ /home/linx/Git/uboot2010/include/libfdt_env.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /home/linx/Git/uboot2010/include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt_support.h \
+ /home/linx/Git/uboot2010/include/u-boot/md5.h \
+ /home/linx/Git/uboot2010/include/image.h \
+ /home/linx/Git/uboot2010/include/libfdt.h \
+ /home/linx/Git/uboot2010/include/fdt_support.h
+crc32.o: /home/linx/Git/uboot2010/lib_generic/crc32.c \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -117,19 +117,19 @@ crc32.o: /home/linx/kernel/uboot2010/lib_generic/crc32.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/linx/kernel/uboot2010/include/u-boot/crc.h \
- /home/linx/kernel/uboot2010/include/u-boot/zlib.h
-md5.o: /home/linx/kernel/uboot2010/lib_generic/md5.c \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /home/linx/Git/uboot2010/include/u-boot/crc.h \
+ /home/linx/Git/uboot2010/include/u-boot/zlib.h
+md5.o: /home/linx/Git/uboot2010/lib_generic/md5.c \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -153,25 +153,24 @@ md5.o: /home/linx/kernel/uboot2010/lib_generic/md5.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/linx/kernel/uboot2010/include/u-boot/md5.h
-sha1.o: /home/linx/kernel/uboot2010/lib_generic/sha1.c \
- /usr/include/string.h /usr/include/features.h \
- /usr/include/i386-linux-gnu/bits/predefs.h \
+ /home/linx/Git/uboot2010/include/u-boot/md5.h
+sha1.o: /home/linx/Git/uboot2010/lib_generic/sha1.c /usr/include/string.h \
+ /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
  /usr/include/i386-linux-gnu/gnu/stubs.h \
  /usr/include/i386-linux-gnu/gnu/stubs-32.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h /usr/include/xlocale.h \
- /home/linx/kernel/uboot2010/include/watchdog.h \
- /home/linx/kernel/uboot2010/include/sha1.h
-envcrc.o: /home/linx/kernel/uboot2010/tools/envcrc.c /usr/include/errno.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h /usr/include/xlocale.h \
+ /home/linx/Git/uboot2010/include/watchdog.h \
+ /home/linx/Git/uboot2010/include/sha1.h
+envcrc.o: /home/linx/Git/uboot2010/tools/envcrc.c /usr/include/errno.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -180,14 +179,14 @@ envcrc.o: /home/linx/kernel/uboot2010/tools/envcrc.c /usr/include/errno.h \
  /usr/include/i386-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/i386-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h \
  /usr/include/asm-generic/errno-base.h /usr/include/stdio.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/types.h \
  /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/waitflags.h \
  /usr/include/i386-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
@@ -204,23 +203,23 @@ envcrc.o: /home/linx/kernel/uboot2010/tools/envcrc.c /usr/include/errno.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /home/linx/kernel/uboot2010/include/config.h \
- /home/linx/kernel/uboot2010/include/config_defaults.h \
- /home/linx/kernel/uboot2010/include/configs/smdk6410.h \
- /home/linx/kernel/uboot2010/include/config_cmd_default.h \
- /home/linx/kernel/uboot2010/include/asm/config.h
-gen_eth_addr.o: /home/linx/kernel/uboot2010/tools/gen_eth_addr.c \
+ /home/linx/Git/uboot2010/include/config.h \
+ /home/linx/Git/uboot2010/include/config_defaults.h \
+ /home/linx/Git/uboot2010/include/configs/smdk6410.h \
+ /home/linx/Git/uboot2010/include/config_cmd_default.h \
+ /home/linx/Git/uboot2010/include/asm/config.h
+gen_eth_addr.o: /home/linx/Git/uboot2010/tools/gen_eth_addr.c \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
  /usr/include/i386-linux-gnu/gnu/stubs.h \
  /usr/include/i386-linux-gnu/gnu/stubs-32.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/types.h \
  /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/waitflags.h \
@@ -238,11 +237,11 @@ gen_eth_addr.o: /home/linx/kernel/uboot2010/tools/gen_eth_addr.c \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/xlocale.h
-img2srec.o: /home/linx/kernel/uboot2010/tools/img2srec.c \
- /home/linx/kernel/uboot2010/tools/os_support.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+img2srec.o: /home/linx/Git/uboot2010/tools/img2srec.c \
+ /home/linx/Git/uboot2010/tools/os_support.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -266,23 +265,23 @@ img2srec.o: /home/linx/kernel/uboot2010/tools/img2srec.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdbool.h /usr/include/ctype.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdbool.h /usr/include/ctype.h \
  /usr/include/elf.h /usr/include/unistd.h \
  /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h
-fdt.o: /home/linx/kernel/uboot2010/libfdt/fdt.c \
- /home/linx/kernel/uboot2010/include/libfdt_env.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+fdt.o: /home/linx/Git/uboot2010/libfdt/fdt.c \
+ /home/linx/Git/uboot2010/include/libfdt_env.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -306,24 +305,24 @@ fdt.o: /home/linx/kernel/uboot2010/libfdt/fdt.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/linx/kernel/uboot2010/tools/fdt_host.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/libfdt.h \
- /home/linx/kernel/uboot2010/include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt_support.h \
- /home/linx/kernel/uboot2010/libfdt/libfdt_internal.h
-fdt_ro.o: /home/linx/kernel/uboot2010/libfdt/fdt_ro.c \
- /home/linx/kernel/uboot2010/include/libfdt_env.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /home/linx/Git/uboot2010/tools/fdt_host.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/libfdt.h \
+ /home/linx/Git/uboot2010/include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt_support.h \
+ /home/linx/Git/uboot2010/libfdt/libfdt_internal.h
+fdt_ro.o: /home/linx/Git/uboot2010/libfdt/fdt_ro.c \
+ /home/linx/Git/uboot2010/include/libfdt_env.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -347,24 +346,24 @@ fdt_ro.o: /home/linx/kernel/uboot2010/libfdt/fdt_ro.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/linx/kernel/uboot2010/tools/fdt_host.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/libfdt.h \
- /home/linx/kernel/uboot2010/include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt_support.h \
- /home/linx/kernel/uboot2010/libfdt/libfdt_internal.h
-fdt_rw.o: /home/linx/kernel/uboot2010/libfdt/fdt_rw.c \
- /home/linx/kernel/uboot2010/include/libfdt_env.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /home/linx/Git/uboot2010/tools/fdt_host.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/libfdt.h \
+ /home/linx/Git/uboot2010/include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt_support.h \
+ /home/linx/Git/uboot2010/libfdt/libfdt_internal.h
+fdt_rw.o: /home/linx/Git/uboot2010/libfdt/fdt_rw.c \
+ /home/linx/Git/uboot2010/include/libfdt_env.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -388,24 +387,24 @@ fdt_rw.o: /home/linx/kernel/uboot2010/libfdt/fdt_rw.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/linx/kernel/uboot2010/tools/fdt_host.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/libfdt.h \
- /home/linx/kernel/uboot2010/include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt_support.h \
- /home/linx/kernel/uboot2010/libfdt/libfdt_internal.h
-fdt_strerror.o: /home/linx/kernel/uboot2010/libfdt/fdt_strerror.c \
- /home/linx/kernel/uboot2010/include/libfdt_env.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /home/linx/Git/uboot2010/tools/fdt_host.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/libfdt.h \
+ /home/linx/Git/uboot2010/include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt_support.h \
+ /home/linx/Git/uboot2010/libfdt/libfdt_internal.h
+fdt_strerror.o: /home/linx/Git/uboot2010/libfdt/fdt_strerror.c \
+ /home/linx/Git/uboot2010/include/libfdt_env.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -429,24 +428,24 @@ fdt_strerror.o: /home/linx/kernel/uboot2010/libfdt/fdt_strerror.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/linx/kernel/uboot2010/tools/fdt_host.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/libfdt.h \
- /home/linx/kernel/uboot2010/include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt_support.h \
- /home/linx/kernel/uboot2010/libfdt/libfdt_internal.h
-fdt_wip.o: /home/linx/kernel/uboot2010/libfdt/fdt_wip.c \
- /home/linx/kernel/uboot2010/include/libfdt_env.h \
- /home/linx/kernel/uboot2010/include/compiler.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /home/linx/Git/uboot2010/tools/fdt_host.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/libfdt.h \
+ /home/linx/Git/uboot2010/include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt_support.h \
+ /home/linx/Git/uboot2010/libfdt/libfdt_internal.h
+fdt_wip.o: /home/linx/Git/uboot2010/libfdt/fdt_wip.c \
+ /home/linx/Git/uboot2010/include/libfdt_env.h \
+ /home/linx/Git/uboot2010/include/compiler.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
  /usr/include/i386-linux-gnu/bits/wordsize.h \
@@ -470,16 +469,16 @@ fdt_wip.o: /home/linx/kernel/uboot2010/libfdt/fdt_wip.c \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h \
  /usr/include/xlocale.h /usr/include/i386-linux-gnu/sys/mman.h \
  /usr/include/i386-linux-gnu/bits/mman.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/byteswap.h \
- /home/linx/kernel/uboot2010/tools/fdt_host.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/libfdt.h \
- /home/linx/kernel/uboot2010/include/fdt.h \
- /home/linx/kernel/uboot2010/tools/../include/fdt_support.h \
- /home/linx/kernel/uboot2010/libfdt/libfdt_internal.h
+ /home/linx/Git/uboot2010/tools/fdt_host.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/libfdt.h \
+ /home/linx/Git/uboot2010/include/fdt.h \
+ /home/linx/Git/uboot2010/tools/../include/fdt_support.h \
+ /home/linx/Git/uboot2010/libfdt/libfdt_internal.h

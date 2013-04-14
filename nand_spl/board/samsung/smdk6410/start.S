@@ -1,1 +1,1 @@
-/home/linx/kernel/uboot2010/cpu/arm1176/start.S
+/home/linx/Git/uboot2010/cpu/arm1176/start.S
