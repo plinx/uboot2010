@@ -1768,9 +1768,9 @@ Linker script and memory map
  .data          0x57e33651        0x0 common/libcommon.a(console.o)
  *fill*         0x57e33651        0x3 00
  .data          0x57e33654      0x414 common/libcommon.a(dlmalloc.o)
- .data          0x57e33a68       0xe2 common/libcommon.a(env_common.o)
+ .data          0x57e33a68       0xe3 common/libcommon.a(env_common.o)
                 0x57e33a68                default_environment
- *fill*         0x57e33b4a        0x2 00
+ *fill*         0x57e33b4b        0x1 00
  .data          0x57e33b4c        0x8 common/libcommon.a(env_nand.o)
                 0x57e33b50                env_name_spec
                 0x57e33b4c                env_ptr

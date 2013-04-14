@@ -240,12 +240,12 @@
 #define CONFIG_SYS_MAPPED_RAM_BASE	0xc0000000
 //#define CONFIG_BOOTCOMMAND	"nand read 0xc0018000 0x60000 0x1c0000;" \
 				"bootm 0xc0018000"
-#define CONFIG_BOOTCOMMAND	"nand read 0xc50008000 0x100000 0x500000;" \
-				"bootm 0xc50008000"
+#define CONFIG_BOOTCOMMAND	"nand read 0xc0008000 0x100000 0x500000;" \
+				"bootm 0xc0008000"
 #else
 #define CONFIG_SYS_MAPPED_RAM_BASE	CONFIG_SYS_SDRAM_BASE
-#define CONFIG_BOOTCOMMAND	"nand read 0x50018000 0x60000 0x1c0000;" \
-				"bootm 0x50018000"
+#define CONFIG_BOOTCOMMAND	"nand read 0x50008000 0x100000 0x500000;" \
+				"bootm 0x50008000"
 #endif
 
 /* NAND U-Boot load and start address */
