@@ -1,1 +1,1 @@
-/home/linx/Git/uboot2010/cpu/arm1176/s3c64xx/cpu_init.S
+/home/linx/kernel/uboot2010/cpu/arm1176/s3c64xx/cpu_init.S

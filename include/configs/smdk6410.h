@@ -34,6 +34,8 @@
 
 
 #define CONFIG_CMD_BOOTZIMAGE
+#define CONFIG_S3C_USBD
+#define USBD_DOWN_ADDR           0xc0000000
 
 /*
  * High Level Configuration Options

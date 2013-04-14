@@ -47,6 +47,7 @@ COBJS-y += cmd_bootm.o
 COBJS-y += cmd_help.o
 COBJS-y += cmd_nvedit.o
 COBJS-y += cmd_version.o
+COBJS-y += cmd_usbd.o
 
 # environment
 COBJS-y += env_common.o
